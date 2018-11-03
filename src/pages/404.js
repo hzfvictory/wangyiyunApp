@@ -12,11 +12,10 @@ class index extends Component {
   render() {
     return (
      <div>
-      987654321
-       abcdefghigklmnopqrstovwsyz
+      40404004040
      </div>
     );
-	
+	}
 }
 
 
