@@ -15,14 +15,9 @@ class index extends Component {
        123456789
        abcdefghigklmnopqrstovwsyz
        666
+       tryuyiuihggjighcvjihughj
 
-
-
-
-tryuyiuihggjighcvjihughj
-
-
-
+       love you
        woca
      </div>
     );
