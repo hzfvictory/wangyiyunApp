@@ -16,7 +16,6 @@ class index extends Component {
       </div>
     );
   }
-
 }
 
 
