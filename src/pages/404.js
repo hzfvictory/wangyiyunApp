@@ -11,17 +11,12 @@ class index extends Component {
 
   render() {
     return (
-     <div>
-       123456789
-       abcdefghigklmnopqrstovwsyz
-       666
-       tryuyiuihggjighcvjihughj
-
-       love you
-       woca
-     </div>
+      <div>
+       我改完了
+      </div>
     );
   }
+
 }
 
 
