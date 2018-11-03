@@ -1,0 +1,33 @@
+html, body, :global(#root) {
+  height: 100%;
+  background-color: #f4f4f4!important;
+  font-family: "PingFangSC-Regular", "Microsoft YaHei", arial;
+}
+
+:global(#root){
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: #f4f4f4;
+  position: sticky;
+}
+:global(h4),:global(ul),:global(li),:global(h1),:global(h2),:global(h3),:global(p){
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+:global(body) {
+  text-align: center;
+}
+:global(li) {
+  list-style-type: none;
+}
+:global(img) {
+  vertical-align: top;
+}
+:global(input){
+  outline:none;
+  border:0;
+}
+:global(i),:global(em){
+  font-style: normal;
+}
