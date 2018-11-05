@@ -4,19 +4,34 @@ export default {
   namespace: 'home',
   state: {
     count: 0,
+    banner:[]
   },
   reducers: {
-    save(state) {
+    save(state,{payload}) {
       return {
         ...state,
-        count: state.count + 1,
+        banner: payload,
       };
     },
   },
   effects: {
     * add({ payload }, { call, put }) {
-      const {list} = yield call(getTopListDetail);
-      console.log(list);
+      const {banners} = yield call(getBanner);
+      yield put({
+        type: 'save',
+        payload: banners
+      })
     },
+  },
+  subscriptions: {
+    setup({dispatch, history}) {
+      return history.listen(({ pathname, search }) => {
+        if (pathname == "/home") {
+          dispatch({
+            type: "add",
+          })
+        }
+      })
+    }
   },
 };
