@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abcd80de-3351-4b19-982b-1414d7806bc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="abcd80de-3351-4b19-982b-1414d7806bc8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -59,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/login/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="552">
@@ -67,15 +65,6 @@
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MHeader.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/home/components/MHeader.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="36" column="91" selection-start-line="36" selection-start-column="91" selection-end-line="36" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -88,6 +77,15 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -260,36 +258,6 @@
               <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_app" type="462c0819:PsiDirectoryNode" />
-              <item name="mock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="count" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -352,16 +320,15 @@
       <workItem from="1540541340208" duration="12385000" />
       <workItem from="1540863525557" duration="1196000" />
       <workItem from="1541055975393" duration="28011000" />
-      <workItem from="1541239959256" duration="25744000" />
+      <workItem from="1541239959256" duration="25776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68385000" />
+    <option name="totallyTimeSpent" value="68417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="726" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -466,13 +433,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -695,6 +655,13 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
