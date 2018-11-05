@@ -5,29 +5,28 @@ import { NavBar } from 'antd-mobile';
 import PropTypes from 'prop-types';
 import { IntlProvider } from 'react-intl';
 import { Button } from 'antd-mobile';
-import styles from './index.less';
-@connect(state=>({
-  count:state.count.count
-}))
 
-export default class index extends Component {
-  constructor(props) {
-    super(props);
-  }
+const mapStateToProps = ({ count: { count }}) =>({ count });
+@connect(mapStateToProps)
+class index extends Component {
+  state = {};
+  static defaultProps = {};
+  static propTypes = {};
 
-  add = () => {
+  onClickAddBtn = () => {
     this.props.dispatch({
       type: 'count/add',
     }).then(response=>console.log(response))
   };
 
   render() {
+    const { onClickAddBtn, props: { count}} = this;
     return (
       <IntlProvider locale="en">
         <div>
-          <span>{this.props.count}</span>
+          <span>{count}</span>
           <Button
-            onClick={this.add}
+            onClick={onClickAddBtn}
           >
             +
           </Button>
@@ -37,10 +36,6 @@ export default class index extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    count: state.count.count,
-    newProp: state.count.newProp,
-  };
-}
 
+
+export default index;
