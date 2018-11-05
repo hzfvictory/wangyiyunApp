@@ -3,13 +3,22 @@ export default {
     ['umi-plugin-react', {
       antd: true,
       dva: true,
-      dynamicImport: true,
       title: '不知道起什么名字',
       dll: true,
       routes: {
-        exclude: [],
+        exclude: [
+          /model\.(j|t)sx?$/,
+          /service\.(j|t)sx?$/,
+          /models\//,
+          /components\//,
+          /services\//,
+        ],
       },
       hardSource: true,
+      dynamicImport: {
+        webpackChunkName: true,
+        loadingComponent: './components/Loading',
+      },
     }],
   ],
   proxy: {
@@ -19,6 +28,7 @@ export default {
       'pathRewrite': { '^/api': '' },
     },
   },
+
   urlLoaderExcludes: [
     /\.svg$/,
   ],
