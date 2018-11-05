@@ -1,0 +1,46 @@
+
+
+.size(
+  @w,
+  @h: @w
+) {
+  width: @w;
+  height: @h;
+}
+
+
+
+.header {
+  position: sticky;
+  background-color: #e85145;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 60px;
+  .headerLeft,
+  .headerRight {
+    .size(30px);
+  }
+
+  .headerLeft {
+    background-image: url("../../../assets/ov.png");
+    background-size: cover;
+  }
+
+  .headerTitle {
+    display: flex;
+    justify-content: center;
+    .headerItem {
+      display: flex;
+      .size(50px);
+      background: url("../../../assets/t_actionbar_discover_selected.png") no-repeat center;
+      background-size:cover ;
+    }
+  }
+
+  .headerRight {
+    background-image: url("../../../assets/pf.png");
+    background-size: cover;
+  }
+}

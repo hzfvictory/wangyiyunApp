@@ -1,0 +1,38 @@
+import React from 'react';
+import router from 'umi/router';
+import { NavLink, withRouter } from 'dva/router';
+import PropTypes from 'prop-types';
+
+import styles from './MHeader.less';
+import Loading from '../../../components/Loading';
+
+const MHeader = props => {
+
+  const showHeader = /music|home|video/.test(props.location.pathname);
+  const open = function mmHeaderOpenDrawer() {
+    props.onOpen(true);
+  };
+  const openSearch = function mmHeaderOpenDrawer() {
+    router.push('/search');
+  };
+  return (
+    showHeader && (
+      <header className={styles.header}>
+        <div className={styles.headerLeft} onClick={open}/>
+        <div className={styles.headerTitle}>
+          <NavLink className={styles.headerItem} to="/home"/>
+        </div>
+        <div className={styles.headerRight} onClick={openSearch}/>
+      </header>
+    )
+  );
+};
+MHeader.defaultProps = {
+  text: '',
+};
+
+MHeader.propTypes = {
+  text: PropTypes.string,
+  onOpen: PropTypes.func,
+};
+export default withRouter(MHeader);
