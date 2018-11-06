@@ -2,13 +2,37 @@
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #dbdcde;
-  &-item {
-    flex: 0 0 25%;
-    padding: 45px 0;
-    & p {
+  padding: 25px 0 5px;
+  .menuItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    & > p {
       text-align: center;
       color: #2e302f;
+      line-height: 40px;
+      margin-bottom:0
     }
   }
+  .menuIcon {
+    width: 50px;
+    height: 50px;
+    background: url("../../../assets/home/img/icn_fm_prs.png") no-repeat center;
+    background-size: cover;
+  }
+  & .menuItem:nth-of-type(2) .menuIcon {
+    background: url("../../../assets/home/img/icn_playlist_prs.png") no-repeat center;
+    background-size: cover;
+  }
+  & .menuItem:nth-of-type(3) .menuIcon {
+    background: url("../../../assets/home/img/icn_rank_prs.png") no-repeat center;
+    background-size: cover;
+  }
+  & .menuItem:nth-of-type(4) .menuIcon {
+    background: url("../../../assets/home/img/icn_daily_prs.png") no-repeat center;
+    background-size: cover;
+  }
+
 
 }

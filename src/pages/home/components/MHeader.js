@@ -2,9 +2,9 @@ import React from 'react';
 import router from 'umi/router';
 import { NavLink, withRouter } from 'dva/router';
 import PropTypes from 'prop-types';
+import Loading from '../../../components/Loading';
 
 import styles from './MHeader.less';
-import Loading from '../../../components/Loading';
 
 const MHeader = props => {
 

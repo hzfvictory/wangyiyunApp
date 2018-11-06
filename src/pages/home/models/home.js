@@ -1,37 +1,44 @@
 import { routerRedux } from 'dva/router';
-import { getBanner ,getTopListDetail} from '../../../services/wangyi.js';
+import { getBanner, getTopListDetail, personalized } from '../../../services/wangyi.js';
+
 export default {
   namespace: 'home',
   state: {
     count: 0,
-    banner:[]
+    banner: [],
+    result: [],
   },
   reducers: {
-    save(state,{payload}) {
+    save(state, { payload: { banner, result } }) {
       return {
         ...state,
-        banner: payload,
+        banner,
+        result,
       };
     },
   },
   effects: {
     * add({ payload }, { call, put }) {
-      const {banners} = yield call(getBanner);
-      yield put({
-        type: 'save',
-        payload: banners
-      })
+      const { banners } = yield call(getBanner);
+      const { result, code } = yield call(personalized);
+
+      if (parseInt(code, 10) === 200) {
+        yield put({
+          type: 'save',
+          payload: { banner: banners, result },
+        });
+      }
     },
   },
   subscriptions: {
-    setup({dispatch, history}) {
+    setup({ dispatch, history }) {
       return history.listen(({ pathname, search }) => {
-        if (pathname == "/home") {
+        if (pathname == '/home') {
           dispatch({
-            type: "add",
-          })
+            type: 'add',
+          });
         }
-      })
-    }
+      });
+    },
   },
 };

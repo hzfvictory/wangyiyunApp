@@ -3,20 +3,21 @@ html, body, :global(#root) {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #f4f4f4!important;
+  background-color: #ffff!important;
   font-family: "PingFangSC-Regular", "Microsoft YaHei", arial;
 }
 
 :global(#root){
   box-sizing: border-box;
   width: 100vw;
-  background-color: #f4f4f4;
+  background-color: #ffff;
   position: sticky;
 }
-:global(h4),:global(ul),:global(li),:global(h1),:global(h2),:global(h3),:global(p){
+:global(h4),:global(ul),:global(li),:global(h1),:global(h2),:global(h3),:global(p),:global(a){
   margin: 0;
   padding: 0;
   font-weight: normal;
+  color: rgba(0, 0, 0, 0.85)!important;
 }
 :global(body) {
   text-align: center;

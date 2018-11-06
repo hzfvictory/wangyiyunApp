@@ -1,9 +1,15 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
-import { WingBlank, Carousel } from 'antd-mobile';
+import { WingBlank, Carousel, Icon } from 'antd-mobile';
+import classnames from 'classnames';
+import { Link } from 'dva/router';
+import router from 'umi/router';
+
 //组件
 import Banner from '../../components/Banner';
 import MHeader from './components/MHeader';
+import NavBack from '../../components/NavBack';
+import ColumnList from './components/ColumnList';
 import Menu from './components/Menu';
 //上下文
 import NameContext from '../../components/Context';
@@ -19,16 +25,26 @@ class index extends Component {
   };
 
   render() {
-    const { props: { home: { banner } }, openDrawer } = this;
+    const { props: { home: { banner, result } }, openDrawer } = this;
     return (
       <Fragment>
         <MHeader onOpen={openDrawer}/>
-        <div className={styles.bg}>
+        <div className={classnames({ [styles.bg]: banner.length })}>
           <NameContext.Provider value={banner}>
           </NameContext.Provider>
           <Banner banner={banner} imgHeight={176}/>
         </div>
+        {/*展示栏*/}
         <Menu/>
+        <div className={styles.songSheet}>
+          <h3>推荐歌单</h3>
+          <Link to='/sheetlist'>
+            <Icon type="right"/>
+          </Link>
+        </div>
+        {/*推荐歌单*/}
+        <ColumnList result={result}
+                    onItemClick={this.handleClick}/>
       </Fragment>
     );
   }
@@ -37,6 +53,9 @@ class index extends Component {
     this.setState({
       isDrawer: state,
     });
+  };
+  handleClick = (id) => {
+    router.push(`/playlist/${id}`);
   };
 }
 

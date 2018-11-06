@@ -1,0 +1,50 @@
+.columnWrapper {
+  display: flex;
+  flex-flow: wrap;
+  padding: 0 5px;
+  .columnItem {
+    flex: 0 0 33.33333%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    .columnImg {
+      position: relative;
+      img {
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 30px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .35) 0, rgba(0, 0, 0, .2) 80%, rgba(0, 0, 0, 0) 100%);
+      }
+      &:after {
+        content: attr(data-play);
+        position: absolute;
+        top: 0;
+        right: 10px;
+        z-index: 1;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 15px;
+        font-size: 14px;
+        color: #FFFfffe6;
+        background:url("../../../assets/home/img/zf.png") no-repeat left;
+        background-size: 15px 15px;
+        text-indent: 5px;
+      }
+    }
+    .columnTitle {
+      min-height: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+  }
+}

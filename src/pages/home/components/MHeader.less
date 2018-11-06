@@ -1,5 +1,3 @@
-
-
 .size(
   @w,
   @h: @w
@@ -8,10 +6,10 @@
   height: @h;
 }
 
-
-
 .header {
   position: sticky;
+  top: 0;
+  z-index: 10;
   background-color: #e85145;
   display: flex;
   justify-content: space-between;
@@ -24,7 +22,7 @@
   }
 
   .headerLeft {
-    background-image: url("../../../assets/ov.png");
+    background-image: url("../../../assets/home/img/ov.png");
     background-size: cover;
   }
 
@@ -34,13 +32,13 @@
     .headerItem {
       display: flex;
       .size(50px);
-      background: url("../../../assets/t_actionbar_discover_selected.png") no-repeat center;
-      background-size:cover ;
+      background: url("../../../assets/home/img/t_actionbar_discover_selected.png") no-repeat center;
+      background-size: cover;
     }
   }
 
   .headerRight {
-    background-image: url("../../../assets/pf.png");
+    background-image: url("../../../assets/home/img/pf.png");
     background-size: cover;
   }
 }

@@ -1,0 +1,39 @@
+.nav {
+  position: sticky;
+  color: #ffffffe6;
+  overflow: hidden;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #e85145;
+  padding: 0 10px;
+  .navLeft {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../../assets/home/img/oq.png') no-repeat;
+    background-size: cover;
+  }
+  .searchHead {
+    width: e('calc(100vw)');
+    margin-left: 20px;
+    height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    .searchInp {
+      width: 100%;
+      height: 30px;
+      border: 0;
+      line-height: 60px;
+      outline: 0;
+      font-size: 18px;
+      color: rgba(255, 255, 255, .9);
+      background-color: transparent;
+      text-indent: 5px;
+      &::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, .6);
+      }
+    }
+
+  }
+}

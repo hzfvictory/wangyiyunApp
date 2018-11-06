@@ -13,11 +13,16 @@ const Menu = (props) => {
     { tit: '歌单', route: '/sheetlist' },
     { tit: '排行榜', route: '/toplist' },
   ];
+  const handleClickRonter = (route) => {
+    router.push(route);
+  };
   return (
     <div className={styles.menu}>
       {data.map((item, index) => {
         return (
-          <div className={styles.menuItem}>
+          <div className={styles.menuItem} key={index} onClick={() => {
+            handleClickRonter(item['route']);
+          }}>
             <div className={styles.menuIcon}/>
             <p>{item['tit']}</p>
           </div>
