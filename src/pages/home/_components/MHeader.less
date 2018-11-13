@@ -1,10 +1,5 @@
-.size(
-  @w,
-  @h: @w
-) {
-  width: @w;
-  height: @h;
-}
+
+@import '../../../assets/css/mixins';
 
 .header {
   position: sticky;
@@ -22,7 +17,7 @@
   }
 
   .headerLeft {
-    background-image: url("../../../assets/home/img/ov.png");
+    background-image: url("../../../assets/img/home/ov.png");
     background-size: cover;
   }
 
@@ -32,13 +27,13 @@
     .headerItem {
       display: flex;
       .size(50px);
-      background: url("../../../assets/home/img/t_actionbar_discover_selected.png") no-repeat center;
+      background: url("../../../assets/img/home/t_actionbar_discover_selected.png") no-repeat center;
       background-size: cover;
     }
   }
 
   .headerRight {
-    background-image: url("../../../assets/home/img/pf.png");
+    background-image: url("../../../assets/img/home/pf.png");
     background-size: cover;
   }
 }

@@ -1,0 +1,44 @@
+// 水平垂直居中
+.center () {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//单行显示省略号
+.noWrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//多行显示省略号
+.noWrapline(@line) {
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+
+//滚动
+.scroll(@type: y) {
+@if @type = = x {
+  overflow-x: auto;
+  overflow-y: hidden;
+} @else {
+  overflow-x: hidden;
+  overflow-y: auto;
+} -webkit-overflow-scrolling: touch;
+}
+
+.size(
+  @w,
+  @h: @w
+) {
+  width: @w;
+  height: @h;
+}

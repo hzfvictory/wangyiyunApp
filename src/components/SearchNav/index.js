@@ -15,11 +15,12 @@ class index extends Component {
   };
 
   onEnter = e => {
+    const { onItemSearch } = this.props;
     if (e.keyCode === 13) {
       this.setState({
         value: e.target.value,
       }, () => {
-        this.props.onItemSearch(this.state.value);
+        onItemSearch(this.state.value);
       });
     }
   };

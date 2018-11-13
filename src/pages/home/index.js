@@ -7,10 +7,10 @@ import router from 'umi/router';
 
 //组件
 import Banner from '../../components/Banner';
-import MHeader from './components/MHeader';
+import MHeader from './_components/MHeader';
 import NavBack from '../../components/NavBack';
-import ColumnList from './components/ColumnList';
-import Menu from './components/Menu';
+import ColumnList from './_components/ColumnList';
+import Menu from './_components/Menu';
 //上下文
 import NameContext from '../../components/Context';
 import styles from './index.less';
@@ -29,7 +29,8 @@ class index extends Component {
     return (
       <Fragment>
         <MHeader onOpen={openDrawer}/>
-        <div className={classnames({ [styles.bg]: banner.length })}>
+        <div className={styles.bannerBox}>
+          <div className={classnames({ [styles.bg]: banner.length })}></div>
           <NameContext.Provider value={banner}>
           </NameContext.Provider>
           <Banner banner={banner} imgHeight={176}/>

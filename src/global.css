@@ -17,7 +17,7 @@ html, body, :global(#root) {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.85)!important;
+  color: rgba(0, 0, 0, 0.85);
 }
 :global(body) {
   text-align: center;
