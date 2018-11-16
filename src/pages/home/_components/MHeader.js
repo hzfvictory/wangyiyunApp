@@ -17,12 +17,14 @@ const MHeader = props => {
   };
   return (
     showHeader && (
-      <header className={styles.header}>
-        <div className={styles.headerLeft} onClick={open}/>
-        <div className={styles.headerTitle}>
-          <NavLink className={styles.headerItem} to="/home"/>
+      <header className={styles.head}>
+        <div className={styles.header}>
+          <div className={styles.headerLeft} onClick={open}/>
+          <div className={styles.headerTitle}>
+            <NavLink className={styles.headerItem} to="/home"/>
+          </div>
+          <div className={styles.headerRight} onClick={openSearch}/>
         </div>
-        <div className={styles.headerRight} onClick={openSearch}/>
       </header>
     )
   );

@@ -8,7 +8,6 @@ export default {
       title: '不知道起什么名字',
       dll: true,
       polyfills: ['ie9'],
-      hd:true,
       routes: {
         exclude: [
           /model\.(j|t)sx?$/,

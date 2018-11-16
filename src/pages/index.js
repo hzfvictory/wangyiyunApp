@@ -4,8 +4,25 @@ import Redirect from 'umi/redirect';
 
 import Link from 'umi/link';
 
+
+const Baidu = ({ id, children }) => {
+  const _hmt = window._hmt || [];
+
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = `https://hm.baidu.com/hm.js?${id}`;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+
+  return children;
+};
+
+
 export default connect()(({ dispatch }) => {
   return (
+    <Baidu id="7ad6cded165cc2b6b51c8d083ee59145">
     <div>
       <h1>Login Page</h1>
       <Button
@@ -23,5 +40,6 @@ export default connect()(({ dispatch }) => {
       <Link to="/count">Go to /count</Link>
       <a href="/search?keywords=海阔天空">搜索</a>
     </div>
+    </Baidu>
   );
 });

@@ -21,3 +21,4 @@
 *.xml
 .idea/workspace.xml
 .idea
+/upload.sh
