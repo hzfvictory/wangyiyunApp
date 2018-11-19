@@ -28,7 +28,6 @@ yarn build  //项目打包
 - Axios（网络请求）
 - ClassNames（处理动态 class ）
 - [Better-Scroll](https://ustbhuangyi.github.io/better-scroll/#/zh)（一款重点解决移动端各种滚动场景需求的插件）
-- FastClick（解决移动端300ms点击延迟）
 
 ## 项目布局
 
@@ -43,6 +42,6 @@ yarn build  //项目打包
 - 排行榜
 - 歌单列表
 - 歌单详情
-- 搜索（歌曲、歌单）
+- 搜索（歌曲、歌单、关键词高亮）
 - 皮肤切换
 
