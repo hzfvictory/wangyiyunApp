@@ -33,7 +33,7 @@ class index extends Component {
           // dotStyle={{backgroundColor:'red'}}
           dotActiveStyle={{backgroundColor:'red'}}
         >
-          {banner.length > 0 ? (banner.map((item, index) => {
+          {!!banner.length  ? (banner.map((item, index) => {
             return (
               <Link to={item['url']}
                     style={{

@@ -25,7 +25,7 @@ class index extends Component {
 
   render() {
     const { props: { result, hot: { hots = [] }, songs, privileges }, state: { value, query, type }, onEnterSearch, handleTabClick } = this;
-    const musicId = privileges.length > 0 && privileges[0]['id'];
+    const musicId = !!privileges.length && privileges[0]['id'];
     return (
       <Fragment>
         <SearchNav onItemSearch={onEnterSearch} value={value}/>

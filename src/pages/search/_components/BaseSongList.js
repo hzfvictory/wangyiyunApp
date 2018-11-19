@@ -25,7 +25,7 @@ const BaseSongList = (props) => {
   return (
     <div className={styles.songWrapper}>
       {
-        list.length > 0 && songCount ? list.map((item, index) => (
+        !!list.length && songCount ? list.map((item, index) => (
             <div
               className={classnames([styles.songItem], { [styles.active]: item.id === activeId })}
               onClick={() => onItemClick(item.id, index)}

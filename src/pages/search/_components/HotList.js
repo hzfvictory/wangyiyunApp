@@ -11,7 +11,7 @@ const HotList = (props) => {
     <div className={styles.searchHots}>
       <h3>{tit}</h3>
       <ul>
-        {hots && hots.length > 0 &&
+        {hots && !!hots.length  &&
         hots.map((itme, index) => (
           <li
             onClick={()=>onClickInput(itme.first)}

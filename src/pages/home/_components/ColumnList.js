@@ -13,7 +13,7 @@ const ColumnList = (props) => {
   return (
     <div className={styles.columnWrapper}>
       {
-        result.length>0 && result.map(item => {
+        !!result.length && result.map(item => {
             return (
               <div
                 className={styles.columnItem}

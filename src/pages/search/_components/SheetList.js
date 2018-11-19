@@ -18,7 +18,7 @@ const SheetList = (props) => {
   return (
     <div className={styles.rowWrapper}>
       {
-        list.length > 0 && playlistCount ? list.map((item, index) => (
+        !!list.length  && playlistCount ? list.map((item, index) => (
             <div
               className={styles.rowItem}
               onClick={() => onItemClick(item.id, index)}
