@@ -3,10 +3,8 @@ import { connect } from 'dva';
 import { Link } from 'dva/router';
 import { Carousel, WingBlank } from 'antd-mobile';
 import PropTypes from 'prop-types';
-
 //loading组件
 import Loading from '../../components/Loading';
-
 class index extends Component {
   constructor(props) {
     super(props);
@@ -32,6 +30,8 @@ class index extends Component {
           afterChange={() => {
           }}
           dots={banner && banner.length > 1}
+          // dotStyle={{backgroundColor:'red'}}
+          dotActiveStyle={{backgroundColor:'red'}}
         >
           {banner.length > 0 ? (banner.map((item, index) => {
             return (

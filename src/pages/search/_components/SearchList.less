@@ -1,0 +1,32 @@
+@import "../../../assets/css/variable.less";
+.clearFlort{
+  height: 75px;
+}
+.searchList {
+  position: relative;
+  height: 100%;
+  .searchTab {
+    display: flex;
+    padding-bottom: 15px;
+    line-height: 60px;
+    position: fixed;
+    top: 110px;
+    width: 100vw;
+
+    background-color: @bg-color;
+    .searchTabItem {
+      flex: 1;
+      text-align: center;
+      color: rgba(255, 255, 255, .5);
+      font-size: 32px;
+      span {
+        padding-bottom: 5px;
+      }
+      &.active span {
+        font-weight: 700;
+        color: #fff;
+        border-bottom: 4px solid #fff;
+      }
+    }
+  }
+}

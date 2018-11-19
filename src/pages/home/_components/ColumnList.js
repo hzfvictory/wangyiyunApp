@@ -13,7 +13,7 @@ const ColumnList = (props) => {
   return (
     <div className={styles.columnWrapper}>
       {
-        result.length ? result.map(item => {
+        result.length>0 && result.map(item => {
             return (
               <div
                 className={styles.columnItem}
@@ -27,7 +27,7 @@ const ColumnList = (props) => {
               </div>
             );
           },
-        ) : <Loading text={'加载中...'}/>
+        )
       }
     </div>
   );

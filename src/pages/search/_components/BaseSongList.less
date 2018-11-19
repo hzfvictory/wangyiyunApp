@@ -1,0 +1,85 @@
+.aa {
+  width: 100px;
+  height: 100px;
+  background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+  background-size: 166px 97px;
+}
+@import "../../../assets/css/mixins.less";
+@import "../../../assets/css/variable.less";
+
+.songWrapper {
+  text-align: left;
+  padding-left: 20px;
+  -webkit-overflow-scrolling: touch;
+  .songItem {
+    display: flex;
+    height: 120px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ddd;
+    padding-top: 10px;
+    .songInfo {
+      flex: 1;
+      min-width: 0;
+      &:not(:last-child) {
+        //border-bottom: 2px solid #ddd;
+      }
+      h2 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 32px;
+        margin-bottom: 10px;
+        .noWrap;
+      }
+      p {
+        height: 30px;
+        line-height: 30px;
+        font-size: 26px;
+        color: #777;
+        .noWrap;
+        i{
+          display: inline-block;
+          width: 24px;
+          height: 16px;
+          background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+          background-size: 166px*2 97px*2;
+          margin-right: 8px;
+        }
+      }
+    }
+    .songBtnPlay {
+      display: flex;
+      width: 104px;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      .songBtn{
+        width: 44px;
+        height: 44px;
+        background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+        background-size: 166px*2 97px*2;
+        background-position: -48px 0;
+      }
+
+    }
+    &.active {
+      .song-num {
+        color: @bg-color;
+      }
+      h2, p {
+        color: @bg-color;
+      }
+    }
+  }
+  .songItem:last-child{
+    border: 0;
+  }
+}
+:global(.highlight) {
+  color: #507daf;
+}
+.placeHolder{
+  .center;
+  top: 300px;
+  font-size: 30px;
+  //background: linear-gradient(red, #ddd);
+}

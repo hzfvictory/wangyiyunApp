@@ -1,18 +1,17 @@
 import { routerRedux } from 'dva/router';
-import { getSearchList, getHotList } from '../../../services/wangyi.js';
+import { getSearchList, getHotList, getMusicDetail } from '../../../services/wangyi.js';
 
 export default {
   namespace: 'search',
-  state: { result: [], hot: [] },
+  state: { result: [], hot: [], songs: [], privileges: [] },
   reducers: {
-    save(state, { payload: { result, hot } }) {
+    save(state, { payload }) {
       return {
-        ...state,
-        result,
-        hot,
+        ...state, ...payload,
       };
     },
   },
+
   effects: {
     * fetch({ payload }, { call, put }) {
       const { code, result } = yield call(getSearchList, payload);
@@ -20,7 +19,7 @@ export default {
       if (parseInt(code, 10) === 200) {
         yield put({
           type: 'save',
-          payload: { result: result['songs'] },
+          payload: { result },
         });
       }
     },
@@ -32,6 +31,22 @@ export default {
           payload: { hot: result },
         });
       }
+    },
+    * getMusic({ payload }, { call, put }) {
+      const { code, songs, privileges } = yield call(getMusicDetail, payload);
+      if (parseInt(code, 10) === 200) {
+        yield put({
+          type: 'save',
+          payload: { songs, privileges },
+        });
+      }
+
+    },
+    * clearQuery({ payload }, { call, put }) {
+      yield put({
+        type: 'save',
+        payload: { result: [] },
+      });
     },
   },
   subscriptions: {

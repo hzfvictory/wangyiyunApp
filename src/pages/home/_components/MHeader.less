@@ -1,8 +1,9 @@
 
 @import '../../../assets/css/mixins';
+@import '../../../assets/css/variable';
 
 .head{
-  height: 60px;
+  height: 110px;
 }
 .header {
   position: fixed;
@@ -10,15 +11,15 @@
   left: 0;
   width: 100vw;
   z-index: 1000;
-  background-color: #e85145;
+  background-color: @bg-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  height: 60px;
+  padding: 0 20px;
+  height: 110px;
   .headerLeft,
   .headerRight {
-    .size(30px);
+    .size(60px);
   }
 
   .headerLeft {
@@ -31,7 +32,7 @@
     justify-content: center;
     .headerItem {
       display: flex;
-      .size(50px);
+      .size(100px);
       background: url("../../../assets/img/home/t_actionbar_discover_selected.png") no-repeat center;
       background-size: cover;
     }

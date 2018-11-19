@@ -1,18 +1,18 @@
 // 播放数量
 export const formatPlayCount = item => {
-  return (item / 10000) > 9 ? ((item / 10000) > 10000 ? `${(item / 100000000).toFixed(1)}亿` : `${Math.ceil(item / 10000)}万`) : Math.floor(item)
+  return (item / 10000) > 9 ? ((item / 10000) > 10000 ? `${(item / 100000000).toFixed(1)}亿` : `${Math.ceil(item / 10000)}万`) : Math.floor(item);
 };
 
 // 补0函数
 export const addZero = s => {
-  return s < 10 ? '0' + s : s
+  return s < 10 ? '0' + s : s;
 };
 
 // 播放时间
 export const formatTime = s => {
   let minute = Math.floor(s / 60);
   let second = Math.floor(s % 60);
-  return `${addZero(minute)}:${addZero(second)}`
+  return `${addZero(minute)}:${addZero(second)}`;
 };
 
 /**
@@ -22,31 +22,33 @@ export const formatTime = s => {
  */
 export const findIndex = (list, music) => {
   return list.findIndex((item) => {
-    return item.id === music.id
-  })
+    return item.id === music.id;
+  });
 };
 
-// 防抖函数
-export const debounce = function (func, delay) {
-  let timer;
-  return function (...args) {
+//函数防抖
+export const debounce = function(fn, interval = 300) {
+  let timer = null;
+  return (arys) => {
     if (timer) {
-      clearTimeout(timer)
+      clearTimeout(timer);
     }
     timer = setTimeout(() => {
-      func.apply(this, args)
-    }, delay)
-  }
+      fn()
+    }, interval);
+  };
 };
 
-// 节流函数
-export const throttle = function (func, delay) {
-  let now = Date.now();
-  return function (...args) {
-    const current = Date.now();
-    if (current - now >= delay) {
-      func.apply(this, args);
-      now = current
+//节流函数
+export const throttle = function(fn, waitTime = 50) {
+  let lastTime = null;
+  return () => {
+    let startTime = +new Date();
+    if (startTime - lastTime > waitTime || !lastTime) {
+      fn();
+      lastTime = startTime;
     }
-  }
+  };
 };
+
+

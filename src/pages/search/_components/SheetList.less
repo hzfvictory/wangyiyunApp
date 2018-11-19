@@ -1,0 +1,47 @@
+@import "../../../assets/css/mixins.less";
+@import "../../../assets/css/variable.less";
+
+.rowWrapper {
+  padding: 20px;
+  -webkit-overflow-scrolling: touch;
+  text-align: left;
+  box-sizing: border-box;
+  .rowItem {
+    display: flex;
+    height: 135px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ddd;
+    padding-top: 10px;
+    .rowHd {
+      width: 130px;
+      min-width: 0;
+      padding: 10px 0;
+      box-sizing: border-box;
+      img {
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+    .rowBd {
+      width: calc(100% - 130px);
+      h2 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 32px;
+        margin-bottom: 10px;
+        .noWrap;
+      }
+      p {
+        height: 30px;
+        line-height: 30px;
+        font-size: 26px;
+        color: #777;
+        .noWrap;
+      }
+    }
+  }
+}
+
+:global(.highlight) {
+  color: #507daf;
+}

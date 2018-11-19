@@ -8,9 +8,9 @@ import router from 'umi/router';
 //组件
 import Banner from '../../components/Banner';
 import MHeader from './_components/MHeader';
+import Menu from './_components/Menu';
 import NavBack from '../../components/NavBack';
 import ColumnList from './_components/ColumnList';
-import Menu from './_components/Menu';
 //上下文
 import NameContext from '../../components/Context';
 import styles from './index.less';

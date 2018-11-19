@@ -2,46 +2,42 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ronter from 'umi/router';
 import withRouter from 'umi/withRouter';
+import { debounce } from 'utils';
+
+import { Icon } from 'antd-mobile';
 import styles from './index.less';
 
 // 页面导航栏组件
 class index extends Component {
-  state = { value: '' };
-
   searchChange = e => {
-    this.setState({
-      value: e.target.value,
-    });
-  };
-
-  onEnter = e => {
     const { onItemSearch } = this.props;
-    if (e.keyCode === 13) {
-      this.setState({
-        value: e.target.value,
-      }, () => {
-        onItemSearch(this.state.value);
-      });
-    }
+    onItemSearch(this.inps.value);
   };
-
+  clearInput=()=>{
+    const { onItemSearch } = this.props;
+    onItemSearch('');
+  };
   render() {
-    const { state: { value } } = this;
+    const { props: { value } } = this;
     return (
-      <nav className={styles.nav}>
-        <div className={styles.navLeft} onClick={ronter.goBack}/>
-        <div className={styles.searchHead}>
-          <input
-            className={styles.searchInp}
-            type="text"
-            placeholder="搜索你喜欢的"
-            value={value}
-            autoFocus="autofocus"
-            onChange={this.searchChange}
-            onKeyDown={this.onEnter}
-          />
-        </div>
-      </nav>
+      <div className={styles.clearFlort}>
+        <nav className={styles.nav}>
+          <div className={styles.navLeft} onClick={ronter.goBack}/>
+          <div className={styles.searchHead}>
+            <input
+              className={styles.searchInp}
+              type="text"
+              placeholder="搜索歌曲、歌手、专辑"
+              value={value}
+              autoFocus="autofocus"
+              ref={x => this.inps = x}
+              onChange={this.searchChange}
+              // onKeyDown={debounce(this.onEnter, 500)}
+            />
+            {value && <Icon onClick={this.clearInput} type='cross-circle' size='xs' color={ 'rgba(255, 255, 255, .5)'}/>}
+          </div>
+        </nav>
+      </div>
     );
   }
 

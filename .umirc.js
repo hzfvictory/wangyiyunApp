@@ -1,4 +1,4 @@
-const path = require('path');
+import { resolve } from 'path';
 
 export default {
   plugins: [
@@ -7,7 +7,8 @@ export default {
       dva: true,
       title: '不知道起什么名字',
       dll: true,
-      polyfills: ['ie9'],
+      polyfills: ['ie11'],
+      hd: true,
       routes: {
         exclude: [
           /model\.(j|t)sx?$/,
@@ -20,6 +21,7 @@ export default {
         ],
       },
       hardSource: true,
+      history: 'hash',
       dynamicImport: {
         //webpackChunkName，是否通过 webpackChunkName 实现有意义的异步文件名
         // loadingComponent，指定加载时的组件路径
@@ -30,19 +32,19 @@ export default {
     }],
   ],
   alias: {
-    music: path.resolve(__dirname, './src/services/wangyi'),
-    components: path.resolve(__dirname, './src/components'),
-    utils: path.resolve(__dirname, './src/components/common/utils'),
-    services: path.resolve(__dirname, './src/services'),
-    assets: path.resolve(__dirname, './src/assets'),
-    src: path.resolve(__dirname, './src'),
+    music: resolve(__dirname, './src/services/wangyi'),
+    components: resolve(__dirname, './src/components'),
+    utils: resolve(__dirname, './src/components/common/utils'),
+    services: resolve(__dirname, './src/services'),
+    assets: resolve(__dirname, './src/assets'),
+    src: resolve(__dirname, './src'),
   },
   proxy: {
     '/api': {
       'target': 'http://120.79.229.197:8000',
       'changeOrigin': true,
       'pathRewrite': { '/api': '/' },
-    }
+    },
   },
 
   urlLoaderExcludes: [

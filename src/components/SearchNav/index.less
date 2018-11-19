@@ -1,35 +1,46 @@
+@import '../../assets/css/variable';
+.clearFlort{
+  height: 110px;
+  position: relative;
+
+}
 .nav {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  background-color: @bg-color;
+  width: 100%;
   color: #ffffffe6;
   overflow: hidden;
-  height: 60px;
-  line-height: 60px;
   display: flex;
+  height: 110px;
+  line-height: 110px;
   align-items: center;
-  background-color: #e85145;
-  padding: 0 10px;
+  padding: 0 20px;
+  z-index: 1000;
   .navLeft {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     background: url('../../assets/img/home/oq.png') no-repeat;
     background-size: cover;
   }
   .searchHead {
-    width: e('calc(100vw)');
-    margin-left: 20px;
-    height: 50px;
-    border-bottom: 1px solid rgba(255, 255, 255, .6);
+    display: flex;
+    align-items: center;
+    width: e('calc(75vw)');
+    margin-left: 40px;
+    height: 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, .8);
     .searchInp {
       width: 100%;
-      height: 30px;
+      height: 60px;
       border: 0;
       line-height: 60px;
       outline: 0;
-      font-size: 18px;
+      font-size: 36px;
       color: rgba(255, 255, 255, .9);
       background-color: transparent;
-      text-indent: 5px;
+      text-indent: 10px;
       &::-webkit-input-placeholder {
         color: rgba(255, 255, 255, .6);
       }
