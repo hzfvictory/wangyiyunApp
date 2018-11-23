@@ -1,29 +1,43 @@
 import { routerRedux } from 'dva/router';
-import { getBanner ,getTopListDetail} from '../services/wangyi.js';
+import { getImageDetail } from '../services/beautiful.js';
+import { Toast } from 'antd-mobile';
+
+import axios from 'axios';
+import qs from 'querystring';
+
 export default {
   namespace: 'count',
   state: {
-    count: 0,
+    result: {},
   },
   reducers: {
-    save(state) {
+    save(state, { payload }) {
       return {
-        ...state,
-        count: state.count + 1,
+        ...state, ...payload,
       };
     },
   },
   effects: {
-    * addBanner({ payload }, { call, put }) {
-      yield call({
-        type: 'save',
-      });
-      return 666;
-      // yield put(routerRedux.push("/admin"))
+    * banner({ payload }, { call, put }) {
+      yield call(
+        axios.post('http://localhost:8000/img', qs.stringify({ image: payload['image'] })).then((data) => {
+          console.log(data);
+        }),
+      );
     },
-    * add({ payload }, { call, put }) {
-      const {list} = yield call(getTopListDetail);
-      console.log(list);
+    * getImage({ payload }, { call, put }) {
+      const { error_code, result, error_msg } = yield call(getImageDetail, payload);
+      if (parseInt(error_code, 10) === 0) {
+        yield put({
+          type: 'save',
+          payload: {
+            result,
+          },
+        });
+      } else {
+        Toast.fail(error_msg, 2);
+      }
+
     },
   },
 };

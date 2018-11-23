@@ -40,10 +40,15 @@ export default {
     src: resolve(__dirname, './src'),
   },
   proxy: {
-    '/api': {
+    '/api/music': {
       'target': 'http://120.79.229.197:8000',
       'changeOrigin': true,
-      'pathRewrite': { '/api': '/' },
+      'pathRewrite': { '/api/music': '/' },
+    },
+    '/api/beautiful': {
+      'target': 'http://47.93.15.83/thinkphp5/public/index/index/faceapi',
+      'changeOrigin': true,
+      'pathRewrite': { '^/api/beautiful': '/' },
     },
   },
 
