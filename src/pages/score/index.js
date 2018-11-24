@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
-import { Link, routerRedux } from 'dva/router';
 import { ImagePicker, SegmentedControl } from 'antd-mobile';
 import PropTypes from 'prop-types';
-import { IntlProvider } from 'react-intl';
+import { Icon } from 'antd';
+import styles from './index.less';
 
-const mapStateToProps = (count) => (count);
+const mapStateToProps = (score) => (score);
 
 @connect(mapStateToProps)
 
@@ -19,12 +19,12 @@ class index extends Component {
 
 
   render() {
-    const { props: { count: { result } }, state: { files, multiple } } = this;
-    var { face_list, face_num } = result;
-    face_list = face_list || [];
-    console.log(face_list);
+    const { props: { score: { result } }, state: { files, multiple } } = this;
+    const { face_list = [], face_num = 1 } = result;
+    console.log(face_list, face_num);
     return (
       <>
+        <i className="iconfont">&#xe698;</i>
         <SegmentedControl
           values={['切换到单选', '切换到多选']}
           selectedIndex={this.state.multiple ? 1 : 0}
@@ -37,7 +37,9 @@ class index extends Component {
           selectable={files.length < 7}
           multiple={multiple}
         />
-        <div>心动分数</div>
+        <div>心动分数 &nbsp;
+          <Icon type="heart" theme="twoTone" twoToneColor="#eb2f96"/>
+        </div>
         {
           !!face_list.length && face_list[0]['beauty']
         }
@@ -57,7 +59,7 @@ class index extends Component {
     console.log(image.length, '图片的长度');
 
     dispatch({
-      type: 'count/getImage',
+      type: 'score/getImage',
       payload: {
         image,
       },

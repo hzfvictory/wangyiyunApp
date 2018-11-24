@@ -8,9 +8,9 @@ import SearchNav from '../../components/SearchNav';
 import HotList from './_components/HotList';
 import SearchList from './_components/SearchList';
 
-
 import styles from './index.less';
 
+const reg = /^\s+|\s+$/g;
 const mapStateToProps = (state) => (state.search);
 
 @connect(mapStateToProps)
@@ -29,15 +29,16 @@ class index extends Component {
     return (
       <Fragment>
         <SearchNav onItemSearch={onEnterSearch} value={value}/>
-        {value.length <= 0 ?
-          <Fragment>
-            <HotList hots={[{ first: '薛之谦' }, { first: '大' }]} tit={'历史记录'} onClickInput={onEnterSearch}/>
-            <HotList hots={hots} onClickInput={onEnterSearch}/>
-          </Fragment> :
-          <SearchList query={result} type={type} onClick={handleTabClick} value={value}/>
-        }
-        <audio autoPlay="autoPlay" src={`https://music.163.com/song/media/outer/url?id=${musicId}.mp3`}/>
-
+        <main>
+          {value.length <= 0 ?
+            <Fragment>
+              <HotList hots={[{ first: '薛之谦' }, { first: '大' }]} tit={'历史记录'} onClickInput={onEnterSearch}/>
+              <HotList hots={hots} onClickInput={onEnterSearch}/>
+            </Fragment> :
+            <SearchList query={result} type={type} onClick={handleTabClick} value={value}/>
+          }
+          <audio autoPlay="autoPlay" src={`https://music.163.com/song/media/outer/url?id=${musicId}.mp3`}/>
+        </main>
 
       </Fragment>
     );
@@ -50,8 +51,8 @@ class index extends Component {
     this.setState({
       value: keywords,
     });
-    keywords = keywords.replace(/^\s+|\s+$/g, '');
-    if (keywords === this.state.value.replace(/^\s+|\s+$/g, '')) return;
+    keywords = keywords.replace(reg, '');
+    if (keywords === this.state.value.replace(reg, '')) return;
     //不为空才调接口
     if (String(keywords).length) {
       this.queryList(keywords, type);

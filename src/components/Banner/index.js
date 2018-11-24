@@ -37,8 +37,7 @@ class index extends Component {
             return (
               <Link to={item['url']}
                     style={{
-                      display: 'block',
-                      position: 'relative',
+                      display: 'inline-block',
                       width: '100%',
                       height: this.state.imgHeight,
                       boxShadow: '2px 1px 1px rgba(0, 0, 0, 0.2)',

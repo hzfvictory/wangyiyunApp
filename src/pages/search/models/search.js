@@ -10,6 +10,9 @@ export default {
         ...state, ...payload,
       };
     },
+    hideModal(state) {
+      return { ...state, modalVisible: false }
+    },
   },
 
   effects: {

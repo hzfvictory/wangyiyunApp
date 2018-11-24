@@ -15,7 +15,7 @@ class index extends Component {
 
   onClickAddBtn = () => {
     this.props.dispatch({
-      type: 'count/add',
+      type: 'score/add',
     }).then(response=>console.log(response))
   };
 

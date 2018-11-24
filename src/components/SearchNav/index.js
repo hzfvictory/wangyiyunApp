@@ -20,7 +20,7 @@ class index extends Component {
   render() {
     const { props: { value } } = this;
     return (
-      <div className={styles.clearFlort}>
+      <header className={styles.clearFlort}>
         <nav className={styles.nav}>
           <div className={styles.navLeft} onClick={ronter.goBack}/>
           <div className={styles.searchHead}>
@@ -37,7 +37,7 @@ class index extends Component {
             {value && <Icon onClick={this.clearInput} type='cross-circle' size='xs' color={ 'rgba(255, 255, 255, .5)'}/>}
           </div>
         </nav>
-      </div>
+      </header>
     );
   }
 

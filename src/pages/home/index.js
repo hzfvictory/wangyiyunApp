@@ -29,23 +29,25 @@ class index extends Component {
     return (
       <Fragment>
         <MHeader onOpen={openDrawer}/>
-        <div className={styles.bannerBox}>
-          <div className={classnames({ [styles.bg]: banner.length })}></div>
-          <NameContext.Provider value={banner}>
-          </NameContext.Provider>
-          <Banner banner={banner} imgHeight={176}/>
-        </div>
-        {/*展示栏*/}
-        <Menu/>
-        <div className={styles.songSheet}>
-          <h3>推荐歌单</h3>
-          <Link to='/sheetlist'>
-            <Icon type="right"/>
-          </Link>
-        </div>
-        {/*推荐歌单*/}
-        <ColumnList result={result}
-                    onItemClick={this.handleClick}/>
+        <main>
+          <div className={classnames({ [styles.bannerBox]: banner.length })}>
+            <NameContext.Provider value={banner}>
+            </NameContext.Provider>
+            <Banner banner={banner} imgHeight={176}/>
+          </div>
+          {/*展示栏*/}
+          <Menu/>
+          <div className={styles.songSheet}>
+            <h3>推荐歌单</h3>
+            <Link to='/sheetlist'>
+              <Icon type="right"/>
+            </Link>
+          </div>
+          {/*推荐歌单*/}
+          <ColumnList result={result}
+                      onItemClick={this.handleClick}/>
+        </main>
+
       </Fragment>
     );
   }

@@ -6,7 +6,7 @@ import axios from 'axios';
 import qs from 'querystring';
 
 export default {
-  namespace: 'count',
+  namespace: 'score',
   state: {
     result: {},
   },

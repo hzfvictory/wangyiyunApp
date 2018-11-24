@@ -27,28 +27,55 @@ export const findIndex = (list, music) => {
 };
 
 //函数防抖
-export const debounce = function(fn, interval = 300) {
+export const debounce = function(callback, interval = 300) {
   let timer = null;
-  return (arys) => {
+  return () => {
     if (timer) {
       clearTimeout(timer);
     }
     timer = setTimeout(() => {
-      fn()
+      callback();
     }, interval);
   };
 };
 
 //节流函数
-export const throttle = function(fn, waitTime = 50) {
+export const throttle = function(callback, waitTime = 50) {
   let lastTime = null;
   return () => {
     let startTime = +new Date();
     if (startTime - lastTime > waitTime || !lastTime) {
-      fn();
+      callback();
       lastTime = startTime;
     }
   };
 };
 
+//格式化
+export const brandPinYin = (data) => {
+  let cloneData = [];
+  cloneData = data.map(i => ({
+    value: i.brand_id,
+    label: i.name,
+    spell: i.sx_name,
+  })).sort((a, b) => {
+    return a.spell.localeCompare(b.spell);
+  });
 
+  const transData = {};
+  cloneData.forEach((item) => {
+    const qf = item.spell[0].toUpperCase();
+    transData[qf] = transData[qf] || [];
+    transData[qf].push(item);
+  });
+  return transData;
+};
+//表单序列化
+export const objToForm = (obj) => {
+  let str = '';
+  for (let key in obj) {
+    str += key + '=' + obj[key] + '&';
+  }
+  str = str.substring(0, str.length - 1);
+  return str;
+};
