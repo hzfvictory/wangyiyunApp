@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=development PORT=8000  umi dev",
-    "build": "umi build && ./upload.sh dist",
+    "build": "umi build",
     "test": "umi test",
     "lint": "eslint --ext .js src mock tests",
     "precommit": "lint-staged",

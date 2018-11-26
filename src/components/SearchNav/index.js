@@ -34,7 +34,7 @@ class index extends Component {
               onChange={this.searchChange}
               // onKeyDown={debounce(this.onEnter, 500)}
             />
-            {value && <Icon onClick={this.clearInput} type='cross-circle' size='xs' color={ 'rgba(255, 255, 255, .5)'}/>}
+            {value && <Icon onClick={this.clearInput} type='cross-circle' size='xxs' color={ 'rgba(255, 255, 255, .5)'}/>}
           </div>
         </nav>
       </header>

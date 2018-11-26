@@ -1,34 +1,30 @@
 import { routerRedux } from 'dva/router';
+import { getMusicDetail } from '../services/music';
 
 export default {
   namespace: 'global',
   state: {
-    text: 'hello umi+dva',
-    login: false,
-  },
+    currentMusic:{},
+    isPlay:false
+    },
   reducers: {
-    setText(state) {
+    save(state, { payload }) {
       return {
-        ...state,
-        text: 'setted dva',
+        ...state, ...payload,
       };
     },
-    signin(state) {
-      return {
-        ...state,
-        login: true,
-      };
-    },
+
   },
   effects: {
-    *login(action, { call, put }) {
-      yield put({
-        type: 'signin',
-      });
-      yield put(routerRedux.push('/admin'));
-    },
-    *throwError() {
-      throw new Error('hi error');
+    * getMusic({ payload }, { call, put }) {
+      const { code, songs, privileges } = yield call(getMusicDetail, payload);
+      if (parseInt(code, 10) === 200) {
+        yield put({
+          type: 'save',
+          payload: { songs, privileges },
+        });
+      }
+
     },
   },
 };

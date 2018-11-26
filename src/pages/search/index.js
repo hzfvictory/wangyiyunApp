@@ -58,7 +58,10 @@ class index extends Component {
       this.queryList(keywords, type);
     } else {
       this.props.dispatch({
-        type: `search/clearQuery`,
+        type: `search/save`,
+        payload: {
+          result: {},
+        },
       });
 
     }

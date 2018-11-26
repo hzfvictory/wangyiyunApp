@@ -11,13 +11,14 @@ import SheetList from './SheetList';
 
 import styles from './SearchList.less';
 
-const mapStateToProps = (state) => (state);
+const mapStateToProps = ({ search, global }) => ({ search, global });
 
 @connect(mapStateToProps)
 
 class SearchList extends Component {
 
   state = {
+    activeId:'',
     tabData: [
       {
         title: '单曲',
@@ -32,8 +33,22 @@ class SearchList extends Component {
     loading: true,
   };
 
+  componentWillReceiveProps(nextprops){
+    const {  global: { isPlay ,currentMusic:{id} } } = nextprops;
+    if(isPlay&&id){
+      this.setState({
+        activeId: id,
+      })
+    }else{
+      this.setState({
+        activeId: '',
+      })
+    }
+  }
+
   render() {
-    const { props: { query, type, value }, state: { tabData } } = this;
+    const { props: { query, type, value }, state: { tabData, activeId } } = this;
+
     return (
       <div className={styles.searchList}>
         <header className={styles.clearFlort}>
@@ -55,6 +70,7 @@ class SearchList extends Component {
             songCount={query['songCount']}
             onItemClick={this.addPlay}
             value={value}
+            activeId={activeId}
           /> :
           <SheetList
             list={query['playlists']}
@@ -77,12 +93,32 @@ class SearchList extends Component {
     onClick(tabType);
   };
   //播放音乐
-  addPlay = (id, index) => {
-    const { dispatch } = this.props;
+  addPlay = (id, index, item) => {
+    const { dispatch, global: { isPlay } } = this.props;
+    console.log(isPlay);
+    this.setState({
+      activeId: !isPlay && id,
+    });
+    //详情页面
+    // dispatch({
+    //   type: `global/getMusic`,
+    //   payload: {
+    //     ids: id,
+    //   },
+    // });
+    let obj = {};
+    obj.id = item.id;
+    obj.name = item.name;
+    obj.duration = item.duration / 1000;
+    obj.singer = item.artists[0].name;
+    obj.image = item.artists[0].img1v1Url;
+    obj.album = item.album.name;
+    obj.alias = item.alias;
     dispatch({
-      type: `search/getMusic`,
+      type: `global/save`,
       payload: {
-        ids: id,
+        currentMusic: obj,
+        isPlay: !isPlay,
       },
     });
   };

@@ -7,14 +7,16 @@ import axios from 'axios';
 const baseURIMap = {
   'development': 'http://localhost:8000/api',
   'product': 'http://120.79.229.197:8000',
-  'default': 'http://localhost:8000/api',
+
+  
+  'default': 'http://120.79.229.197:8000',
 };
 
 // baseURI
 //   /music
 //   /beautiful
 
-axios.defaults.baseURL = baseURIMap[process.env.NODE_ENV] || baseURIMap['default'];
+axios.defaults.baseURL = baseURIMap[process.env.NODE_ENV] || baseURIMap['product'];
 
 // axios.defaults.baseURL = ' http://192.168.43.169:8000/api';
 axios.defaults.withCredentials = true;

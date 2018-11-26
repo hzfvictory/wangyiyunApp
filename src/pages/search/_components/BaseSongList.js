@@ -28,7 +28,7 @@ const BaseSongList = (props) => {
         !!list.length && songCount ? list.map((item, index) => (
             <div
               className={classnames([styles.songItem], { [styles.active]: item.id === activeId })}
-              onClick={() => onItemClick(item.id, index)}
+              onClick={() => onItemClick(item.id, index ,item)}
               key={item.id}
             >
               <div className={styles.songInfo}>
@@ -41,7 +41,8 @@ const BaseSongList = (props) => {
                 </p>
               </div>
               <div className={styles.songBtnPlay}>
-                <i className={styles.songBtn}> </i>
+                {item.id !== activeId && <i className="iconfont"> &#xe60c;</i>}
+                {item.id === activeId && <i className="iconfont"> &#xe606;</i>}
               </div>
             </div>
           )) :
@@ -57,7 +58,7 @@ BaseSongList.defaultProps = {
 BaseSongList.propTypes = {
   list: PropTypes.array,
   onItemClick: PropTypes.func,
-  activeId: PropTypes.number || PropTypes.string,
+  activeId: PropTypes.any,
 };
 
 export default withRouter(BaseSongList);

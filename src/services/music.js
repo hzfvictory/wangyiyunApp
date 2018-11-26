@@ -1,6 +1,9 @@
 import axios from './index';
 
-const base = 'music';
+let base = '';
+if (process.env.NODE_ENV === 'development') {
+  base = 'music';
+}
 
 //获取轮播
 export function getBanner() {

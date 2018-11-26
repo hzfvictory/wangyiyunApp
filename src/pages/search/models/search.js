@@ -1,9 +1,9 @@
 import { routerRedux } from 'dva/router';
-import { getSearchList, getHotList, getMusicDetail } from '../../../services/wangyi.js';
+import { getSearchList, getHotList, getMusicDetail } from '../../../services/music.js';
 
 export default {
   namespace: 'search',
-  state: { result: [], hot: [], songs: [], privileges: [] },
+  state: { result: [], hot: [], songs: [], privileges: []},
   reducers: {
     save(state, { payload }) {
       return {
@@ -44,12 +44,6 @@ export default {
         });
       }
 
-    },
-    * clearQuery({ payload }, { call, put }) {
-      yield put({
-        type: 'save',
-        payload: { result: [] },
-      });
     },
   },
   subscriptions: {

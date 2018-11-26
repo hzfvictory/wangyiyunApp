@@ -4,6 +4,7 @@ html, body, #root {
   width: 100vw;
   background-color: #ffff !important;
   font-family: "PingFangSC-Regular", "Microsoft YaHei", arial;
+  font-size: 28px;
 }
 
 h1, h2, h3, h4, ul, li, p, a {
@@ -12,7 +13,9 @@ h1, h2, h3, h4, ul, li, p, a {
   font-weight: normal;
   color: rgba(0, 0, 0, 0.85);
 }
-
+main{
+  height: 100%;
+}
 body {
   text-align: center;
 }
@@ -36,11 +39,11 @@ i, em {
 
 @font-face {
   font-family: 'iconfont';  /* project id 934314 */
-  src: url('http://at.alicdn.com/t/font_934314_qqwt6086s2.eot');
-  src: url('http://at.alicdn.com/t/font_934314_qqwt6086s2.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_934314_qqwt6086s2.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_934314_qqwt6086s2.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_934314_qqwt6086s2.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_934314_ul0y8zptvo8.eot');
+  src: url('//at.alicdn.com/t/font_934314_ul0y8zptvo8.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_934314_ul0y8zptvo8.woff') format('woff'),
+  url('//at.alicdn.com/t/font_934314_ul0y8zptvo8.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_934314_ul0y8zptvo8.svg#iconfont') format('svg');
 }
 
 .iconfont {

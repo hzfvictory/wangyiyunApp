@@ -9,6 +9,7 @@ export default {
       dll: true,
       polyfills: ['ie11'],
       hd: true,
+      // hash: true,
       routes: {
         exclude: [
           /model\.(j|t)sx?$/,
@@ -21,7 +22,7 @@ export default {
         ],
       },
       hardSource: true,
-      history: 'hash',
+      // history: 'hash',
       dynamicImport: {
         //webpackChunkName，是否通过 webpackChunkName 实现有意义的异步文件名
         // loadingComponent，指定加载时的组件路径

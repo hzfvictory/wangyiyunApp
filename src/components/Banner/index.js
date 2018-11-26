@@ -39,9 +39,10 @@ class index extends Component {
                     style={{
                       display: 'inline-block',
                       width: '100%',
-                      height: this.state.imgHeight,
+                      height: '43.8vw',
                       boxShadow: '2px 1px 1px rgba(0, 0, 0, 0.2)',
-                      backgroundColor: item['backgroundUrl'],
+                      // backgroundImage:`url('${item['backgroundUrl']}')`
+                      backgroundColor:"#fff"
                     }}
                     key={item['targetId']}>
                 <img

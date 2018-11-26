@@ -1,5 +1,5 @@
 import { routerRedux } from 'dva/router';
-import { getBanner, getTopListDetail, personalized } from '../../../services/wangyi.js';
+import { getBanner, getTopListDetail, personalized } from '../../../services/music.js';
 
 export default {
   namespace: 'home',
