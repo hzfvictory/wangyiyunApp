@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'dva';
 import { ImagePicker, SegmentedControl } from 'antd-mobile';
 import PropTypes from 'prop-types';
@@ -19,31 +19,33 @@ class index extends Component {
 
 
   render() {
-    const { props: { score: { result } }, state: { files, multiple } } = this;
+    const { props: { score: { result } }, state: { files } } = this;
     const { face_list = [], face_num = 1 } = result;
     console.log(face_list, face_num);
     return (
-      <>
-        <i className="iconfont">&#xe698;</i>
-        <SegmentedControl
-          values={['切换到单选', '切换到多选']}
-          selectedIndex={this.state.multiple ? 1 : 0}
-          onChange={this.onSegChange}
-        />
-        <ImagePicker
-          files={files}
-          onChange={this.onChange}
-          onImageClick={(index, fs) => console.log(index, fs)}
-          selectable={files.length < 7}
-          multiple={multiple}
-        />
-        <div>心动分数 &nbsp;
-          <Icon type="heart" theme="twoTone" twoToneColor="#eb2f96"/>
+      <div className={styles.scoreBg}>
+        {/*<SegmentedControl*/}
+        {/*values={['切换到单选', '切换到多选']}*/}
+        {/*selectedIndex={this.state.multiple ? 1 : 0}*/}
+        {/*onChange={this.onSegChange}*/}
+        {/*/>*/}
+        <div className={styles.scoreItem}>
+          <ImagePicker
+            length={2}
+            files={files}
+            onChange={this.onChange}
+            onImageClick={(index, fs) => console.log(index, fs)}
+            selectable={files.length < 1}
+            multiple={1}
+          />
+          <div className={styles.scoreTit}>心动分数 &nbsp;
+            <Icon type="heart" theme="twoTone" twoToneColor="#eb2f96"/>
+            {
+              !!face_list.length && face_list[0]['beauty']
+            }
+          </div>
         </div>
-        {
-          !!face_list.length && face_list[0]['beauty']
-        }
-      </>
+      </div>
     );
   }
 

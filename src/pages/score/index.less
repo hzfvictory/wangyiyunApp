@@ -1,0 +1,39 @@
+.scoreBg {
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/img/score.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.3;
+  }
+  .scoreItem {
+    position: relative;
+    .scoreTit{
+      position: absolute;
+      top: 0;
+      right: 25vw;
+    }
+  }
+}
+
+:global(.am-image-picker-list .am-image-picker-upload-btn) {
+  background-color: transparent;
+  border: 1px solid red;
+}
+
+:global(.am-image-picker-list .am-image-picker-upload-btn:before,
+.am-image-picker-list .am-image-picker-upload-btn:after) {
+  width: 1PX;
+  height: 0.5rem;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}

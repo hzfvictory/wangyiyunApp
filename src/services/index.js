@@ -3,21 +3,21 @@
  */
 import axios from 'axios';
 
+const URL_NO_MUSIC = ['/score'];
 
 const baseURIMap = {
   'development': 'http://localhost:8000/api',
   'product': 'http://120.79.229.197:8000',
 
-  
+  'score': 'http://47.93.15.83/thinkphp5/public/index/index/faceapi',
   'default': 'http://120.79.229.197:8000',
 };
 
-// baseURI
-//   /music
-//   /beautiful
+const score = URL_NO_MUSIC.includes(window.location.pathname);
 
-axios.defaults.baseURL = baseURIMap[process.env.NODE_ENV] || baseURIMap['product'];
 
+
+axios.defaults.baseURL = baseURIMap[process.env.NODE_ENV] || (score ? baseURIMap['score'] : baseURIMap['product']);
 // axios.defaults.baseURL = ' http://192.168.43.169:8000/api';
 axios.defaults.withCredentials = true;
 axios.interceptors.response.use(result => {
