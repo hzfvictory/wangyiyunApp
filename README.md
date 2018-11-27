@@ -1,7 +1,7 @@
 
 > API：一个开源的[网易云音乐 NodeJS 版 API](https://binaryify.github.io/NeteaseCloudMusicApi)（有api才有动力写！！！）
 
-> [在线演示地址](www.jing999.cn)
+> [在线演示地址](http://www.jing999.cn)
 
 ## 如何安装与使用
 
