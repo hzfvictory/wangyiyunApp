@@ -1,5 +1,6 @@
 import { resolve } from 'path';
 
+const { version } = require('./package');
 export default {
   plugins: [
     ['umi-plugin-react', {
@@ -33,7 +34,7 @@ export default {
     }],
   ],
   alias: {
-    music: resolve(__dirname, './src/services/wangyi'),
+    music: resolve(__dirname, './src/services/music'),
     components: resolve(__dirname, './src/components'),
     utils: resolve(__dirname, './src/components/common/utils'),
     services: resolve(__dirname, './src/services'),
@@ -52,8 +53,10 @@ export default {
       'pathRewrite': { '^/api/beautiful': '/' },
     },
   },
-
+  publicPath: `/${version}/`,
+  // outputPath: `./dist/${version}`,
   urlLoaderExcludes: [
     /\.svg$/,
   ],
+  // theme: { "@primary-color": "#e5473c",}
 };

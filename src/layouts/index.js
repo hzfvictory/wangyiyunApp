@@ -6,6 +6,20 @@ import styles from './index.css';
 
 const URL_NO_LAYOUT = ['/login', '/score'];
 
+const Baidu = ({ id, children }) => {
+  const _hmt = window._hmt || [];
+
+  (function() {
+    var hm = document.createElement('script');
+    hm.src = `https://hm.baidu.com/hm.js?${id}`;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+
+
+  return children;
+};
+
 class Index extends Component {
 
 

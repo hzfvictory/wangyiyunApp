@@ -37,6 +37,16 @@ i, em {
   font-style: normal;
 }
 
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
 @font-face {
   font-family: 'iconfont';  /* project id 934314 */
   src: url('//at.alicdn.com/t/font_934314_ul0y8zptvo8.eot');

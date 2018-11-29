@@ -4,6 +4,7 @@ import router from 'umi/router';
 import classnames from 'classnames';
 import { connect } from 'dva';
 import withRouter from 'umi/withRouter';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import styles from './baseLayout.less';
 
@@ -66,14 +67,12 @@ class BaseLayout extends Component {
   }
 
   render() {
-    const { global: { isPlay, currentMusic = {} } } = this.props;
+    const { global: { isPlay, currentMusic = {} }, location } = this.props;
     const { showMusicList } = this.state;
     const isList = Object.keys(currentMusic).length;
     return (
       <Fragment>
-
         {this.props.children}
-
         <footer className={styles.player}>
           <div className={styles.playerFull}>
             3456789

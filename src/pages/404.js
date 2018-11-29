@@ -9,7 +9,6 @@ import { throttle, debounce } from 'utils';
 
 const Step = Steps.Step;
 
-
 class index extends Component {
   constructor(props) {
     super(props);
@@ -18,10 +17,34 @@ class index extends Component {
     };
   }
 
+  customIcon = (type) => {
+
+    return (
+      <div className={classnames([styles.borderBox], { [styles.borderfocus]: type })}>
+        <span className={classnames([styles.itemrBox], { [styles.itemrBoxfocus]: type })}></span>
+      </div>
+    );
+  };
+
+  handleKeyDown = (options) => {
+    Toast.success('函数防抖');
+  };
+
+  handleScroll = () => {
+    console.log(1111);
+  };
+
 
   render() {
+    console.log('%cHellow','color:green;background:yellow;');
     return (
       <Fragment>
+        <Link to={{
+          pathname: '/home',
+          state: { id: 23456789 },
+        }}>
+          首页
+        </Link>
         <div style={{ position: 'sticky', height: '30px' }}>
           这是404页面!!!!!
         </div>
@@ -50,23 +73,6 @@ class index extends Component {
       </Fragment>
     );
   }
-
-  customIcon = (type) => {
-
-    return (
-      <div className={classnames([styles.borderBox], { [styles.borderfocus]: type })}>
-        <span className={classnames([styles.itemrBox], { [styles.itemrBoxfocus]: type })}></span>
-      </div>
-    );
-  };
-
-  handleKeyDown = (options) => {
-    Toast.success('函数防抖');
-  };
-  handleScroll = () => {
-    console.log(1111);
-  };
-
 }
 
-export default (index);
+export default index;
