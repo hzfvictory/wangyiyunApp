@@ -33,7 +33,7 @@ export default {
   subscriptions: {
     setup({ dispatch, history }) {
       return history.listen(({ pathname, search }) => {
-        if (pathname == '/home') {
+        if (pathname === '/home' || pathname === '/') {
           dispatch({
             type: 'add',
           });

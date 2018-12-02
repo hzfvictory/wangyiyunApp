@@ -25,9 +25,9 @@ class index extends Component {
   };
 
   render() {
-    const { props: { home: { banner, result } }, openDrawer } = this;
+    const { props: { home: { banner, result }, location }, openDrawer } = this;
     return (
-      <Fragment>
+      <div>
         <MHeader onOpen={openDrawer}/>
         <main>
           <div className={classnames({ [styles.bannerBox]: banner.length })}>
@@ -47,8 +47,7 @@ class index extends Component {
           <ColumnList result={result}
                       onItemClick={this.handleClick}/>
         </main>
-
-      </Fragment>
+      </div>
     );
   }
 

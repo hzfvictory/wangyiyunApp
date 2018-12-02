@@ -4,7 +4,6 @@ import router from 'umi/router';
 import classnames from 'classnames';
 import { connect } from 'dva';
 import withRouter from 'umi/withRouter';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import styles from './baseLayout.less';
 
@@ -71,35 +70,39 @@ class BaseLayout extends Component {
     const { showMusicList } = this.state;
     const isList = Object.keys(currentMusic).length;
     return (
-      <Fragment>
+      <div>
         {this.props.children}
-        <footer className={styles.player}>
+        <footer>
           <div className={styles.playerFull}>
             3456789
           </div>
-          {!!isList && <div className={styles.playerMin} onClick={() => this.setState({ isFull: true })}>
-            <div className={styles.playerMinImg}>
-              <img src={`${currentMusic.image}?param=100y100`} alt="" width="100%" height="100%"/>
-            </div>
-            <div className={styles.playerMinInfo}>
-              <h2>{currentMusic.name}</h2>
-              <p>{currentMusic.singer}</p>
-            </div>
-            <div className={styles.playerMinPlay} onClick={this.play}>
-              {!isPlay && <i className="iconfont">&#xe60c;</i>}
-              {isPlay && <i className="iconfont">&#xe606;</i>}
-            </div>
-            <div className={styles.playerMinList} onClick={this.toggleShow}>
-              <i className="iconfont">&#xe66f;</i>
-            </div>
-          </div>}
+          {!!isList &&
+          <div className={styles.player}>
 
+            <div className={styles.playerMin} onClick={() => this.setState({ isFull: true })}>
+              <div className={styles.playerMinImg}>
+                <img src={`${currentMusic.image}?param=100y100`} alt="" width="100%" height="100%"/>
+              </div>
+              <div className={styles.playerMinInfo}>
+                <h2>{currentMusic.name}</h2>
+                <p>{currentMusic.singer}</p>
+              </div>
+              <div className={styles.playerMinPlay} onClick={this.play}>
+                {!isPlay && <i className="iconfont">&#xe60c;</i>}
+                {isPlay && <i className="iconfont">&#xe606;</i>}
+              </div>
+              <div className={styles.playerMinList} onClick={this.toggleShow}>
+                <i className="iconfont">&#xe66f;</i>
+              </div>
+            </div>
+          </div>
+          }
           <audio ref={x => this.audioEle = x}
                  src={`https://music.163.com/song/media/outer/url?id=${currentMusic['id']}.mp3`}/>
 
         </footer>
 
-      </Fragment>
+      </div>
     );
   }
 }

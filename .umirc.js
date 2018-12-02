@@ -53,10 +53,10 @@ export default {
       'pathRewrite': { '^/api/beautiful': '/' },
     },
   },
-  publicPath: `/${version}/`,
+  // publicPath: `/${version}/`,
   // outputPath: `./dist/${version}`,
+  // theme: { "@primary-color": "#e5473c",}
   urlLoaderExcludes: [
     /\.svg$/,
   ],
-  // theme: { "@primary-color": "#e5473c",}
 };

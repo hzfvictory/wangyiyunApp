@@ -1,41 +1,35 @@
 import React, { Component, Fragment } from 'react';
 import BaseLayout from './baseLayout';
-import connect from 'dva';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import styles from './index.css';
+import './index.css';
 
 const URL_NO_LAYOUT = ['/login', '/score'];
 
-const Baidu = ({ id, children }) => {
-  const _hmt = window._hmt || [];
-
-  (function() {
-    var hm = document.createElement('script');
-    hm.src = `https://hm.baidu.com/hm.js?${id}`;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-
-
-  return children;
-};
 
 class Index extends Component {
-
 
   renderBody = () => {
     const { location: { pathname }, children } = this.props;
     if (URL_NO_LAYOUT.includes(pathname)) {
-      return (<Fragment> {children} </Fragment>);
+      return (<div> {children} </div>);
     }
     return (<BaseLayout {...this.props} />);
   };
 
   render() {
+    const { location: { pathname } } = this.props;
     return (
-      <Fragment>
-        {this.renderBody()}
-      </Fragment>
+      <TransitionGroup>
+        <CSSTransition
+          appear={true}
+          classNames="fade"
+          timeout={600}
+          key={pathname}
+        >
+          {this.renderBody()}
+        </CSSTransition>
+      </TransitionGroup>
     );
   }
 }

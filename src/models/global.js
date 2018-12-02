@@ -1,6 +1,6 @@
 import { routerRedux } from 'dva/router';
 import { getMusicDetail } from '../services/music';
-
+import router from "umi/router"
 export default {
   namespace: 'global',
   state: {
@@ -25,6 +25,15 @@ export default {
         });
       }
 
+    },
+  },
+  subscriptions: {
+    setup({ dispatch, history }) {
+      return history.listen(({ pathname, search }) => {
+        if (pathname === '/') {
+          router.push("/home")
+        }
+      });
     },
   },
 };
