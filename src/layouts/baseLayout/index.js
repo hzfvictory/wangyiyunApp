@@ -4,8 +4,9 @@ import router from 'umi/router';
 import classnames from 'classnames';
 import { connect } from 'dva';
 import withRouter from 'umi/withRouter';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import styles from './baseLayout.less';
+import styles from './index.less';
 
 const currentMusic = {
   id: 368727,
@@ -65,13 +66,31 @@ class BaseLayout extends Component {
     }
   }
 
+  // shouldComponentUpdate(nextProps, nextState) {
+  //   const { global: { isPlay, currentMusic = {} }, location } = this.props;
+  //   console.log(nextProps.global.currentMusic.id,currentMusic['id']);
+  //
+  //   if (nextProps.global.currentMusic.id && nextProps.global.currentMusic.id === currentMusic['id']) return false;
+  //   return true;
+  // }
+
   render() {
-    const { global: { isPlay, currentMusic = {} }, location } = this.props;
+    const { global: { isPlay, currentMusic = {} }, location: { key } } = this.props;
     const { showMusicList } = this.state;
     const isList = Object.keys(currentMusic).length;
     return (
-      <div>
-        {this.props.children}
+      <Fragment>
+        <TransitionGroup>
+          <CSSTransition
+            appear={true}
+            // unmountOnExit={false}
+            classNames="fade"
+            timeout={600}
+            key={key}
+          >
+            <div> {this.props.children} </div>
+          </CSSTransition>
+        </TransitionGroup>
         <footer>
           <div className={styles.playerFull}>
             3456789
@@ -102,7 +121,7 @@ class BaseLayout extends Component {
 
         </footer>
 
-      </div>
+      </Fragment>
     );
   }
 }

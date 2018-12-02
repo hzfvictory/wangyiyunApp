@@ -95,7 +95,6 @@ class SearchList extends Component {
   //播放音乐
   addPlay = (id, index, item) => {
     const { dispatch, global: { isPlay } } = this.props;
-    console.log(isPlay);
     this.setState({
       activeId: !isPlay && id,
     });
