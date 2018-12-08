@@ -6,7 +6,7 @@ import axios from 'axios';
 const URL_NO_MUSIC = ['/score'];
 
 const baseURIMap = {
-  'development': 'http://172.20.10.6:8000/api',
+  'development': 'http://localhost:8000/api',
   'product': 'http://120.79.229.197:8000',
 
   'score': 'http://47.93.15.83/thinkphp5/public/index/index/faceapi',

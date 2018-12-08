@@ -7,10 +7,10 @@ import router from 'umi/router';
 import ScrollTop from '../../components/ScrollTop';
 import { throttle } from '../../components/common/utils';
 
-import NavBack from "../../components/NavBack";
+import NavBack from '../../components/NavBack';
 import styles from './index.less';
 
-const dataArray = Array.from(Array(3000), (v, k) => k);
+const dataArray = Array.from(Array(500), (v, k) => k);
 const mapStateToProps = (state) => (state);
 
 @connect(mapStateToProps)
@@ -23,7 +23,7 @@ class index extends Component {
 
 
   componentDidMount() {
-    this.sc.addEventListener('scroll', throttle(this.handler,30), false);
+    this.sc.addEventListener('scroll', throttle(this.handler, 30), false);
   }
 
   componentWillUnmount() {
@@ -33,9 +33,10 @@ class index extends Component {
 
   handler = () => {
     if (this.sc.scrollTop >= document.body.clientHeight * 1.5) {
-      this.is_go_top.style.display = 'block';
+
+      this.is_go_top.style.WebkitTransform='translateY(0)';
     } else {
-      this.is_go_top.style.display = 'none';
+      this.is_go_top.style.WebkitTransform='translateY(7vh)';
     }
   };
 
@@ -52,7 +53,7 @@ class index extends Component {
           <NavBack/>
           <div className={styles.scrollBar} id='go_top' ref={x => this.sc = x}>
             {dataArray.map(item => {
-              return <div key={item}>
+              return <div key={item} onClick={this.handleClick}>
                 {item}
                 <WhiteSpace style={{ background: '#f4f5f7' }} size='sm'/>
               </div>;

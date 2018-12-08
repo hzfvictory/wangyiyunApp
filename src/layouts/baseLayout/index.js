@@ -7,6 +7,7 @@ import withRouter from 'umi/withRouter';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import styles from './index.less';
+import search from '../../pages/search/models/search';
 
 const currentMusic = {
   id: 368727,
@@ -68,24 +69,25 @@ class BaseLayout extends Component {
 
   // shouldComponentUpdate(nextProps, nextState) {
   //   const { global: { isPlay, currentMusic = {} }, location } = this.props;
-  //   console.log(nextProps.global.currentMusic.id,currentMusic['id']);
-  //
-  //   if (nextProps.global.currentMusic.id && nextProps.global.currentMusic.id === currentMusic['id']) return false;
+  //   console.log(location.pathname);
   //   return true;
   // }
 
+
   render() {
-    const { global: { isPlay, currentMusic = {} }, location: { key } } = this.props;
+    const { global: { isPlay, currentMusic = {} }, location: { key, pathname } } = this.props;
     const { showMusicList } = this.state;
     const isList = Object.keys(currentMusic).length;
+    const flag = pathname !== '/search';
     return (
       <Fragment>
         <TransitionGroup>
           <CSSTransition
             appear={true}
-            // unmountOnExit={false}
+            // exit={false}
+            // enter={false}
             classNames="fade"
-            timeout={600}
+            timeout={500}
             key={key}
           >
             <div> {this.props.children} </div>

@@ -10,6 +10,7 @@ export default {
       dll: true,
       polyfills: ['ie11'],
       hd: true,
+      chunks: ['vendors', 'antdesigns', 'umi'],
       // hash: true,
       routes: {
         exclude: [
@@ -33,6 +34,32 @@ export default {
       fastClick: true,
     }],
   ],
+  chainWebpack(config, { webpack }) {
+    config.optimization.splitChunks({
+      chunks: 'async',
+      minSize: 30000,
+      maxSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+        vendors: {
+          name: 'vendors',
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom|lodash|lodash-decorators|redux-saga|re-select|dva|moment)[\\/]/,
+          priority: -10,
+        },
+        antdesigns: {
+          name: 'antdesigns',
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/](@ant-design|antd)[\\/]/,
+          priority: -11,
+        },
+      },
+    });
+  },
   alias: {
     music: resolve(__dirname, './src/services/music'),
     components: resolve(__dirname, './src/components'),

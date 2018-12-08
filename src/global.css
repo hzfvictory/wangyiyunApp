@@ -59,8 +59,7 @@ i, em {
 /*路由切换动画*/
 
 
-/*这里定义整个应用加载时的动画，进场前这里设置了缩放为0，
-进场过程中缩放变为1，也就是100%，持续时间为600ms，
+/*这里定义整个应用加载时的动画,持续时间为500ms，
 时间曲是ease-in-out，一种先快后慢的变化曲线*/
 
 .fade-appear{
@@ -71,10 +70,10 @@ i, em {
 .fade-appear.fade-appear-active{
   opacity:1;
   transform:none;
-  transition: 600ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
 
-/*设置进场前透明度为0，防缩为0*/
+/*设置进场前透明度为0*/
 
 .fade-enter {
   opacity:0;
@@ -82,25 +81,25 @@ i, em {
 }
 
 
-/*设置进场过程中 透明度为1，放缩的位置为左上角，持续时间为600ms，时间曲是ease-in-out */
+/*设置进场过程中 透明度为1持续时间为500ms，时间曲是ease-in-out */
 .fade-enter.fade-enter-active {
   opacity:1;
   transform:none;
-  transition: 600ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
 
 /*设置退场前透明度为1*/
 .fade-exit{
   position: absolute;
   top: 0;
+  z-index: 9999;
   opacity:1;
   transform:translate3d(0, 0, 0);
 }
 
-/*设置退场过程中 透明度为0，防缩为0，放缩的位置默认是中间，所以不设置也可以，
-持续时间为600ms，时间曲是ease-in-out */
+/*设置退场过程中 持续时间为500ms，时间曲是ease-in-out */
 .fade-exit.fade-exit-active{
-  transition: 600ms ease-in-out;
+  transition: 500ms ease-in-out;
   transform:translate3d(100vw, 0, 0);
 
 }
