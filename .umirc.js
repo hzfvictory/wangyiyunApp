@@ -8,10 +8,9 @@ export default {
       dva: true,
       title: '不知道起什么名字',
       dll: true,
-      polyfills: ['ie11'],
+      // polyfills: ['ie11'],
       hd: true,
       chunks: ['vendors', 'antdesigns', 'umi'],
-      // hash: true,
       routes: {
         exclude: [
           /model\.(j|t)sx?$/,
@@ -48,14 +47,14 @@ export default {
         vendors: {
           name: 'vendors',
           chunks: 'all',
-          test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom|lodash|lodash-decorators|redux-saga|re-select|dva|moment)[\\/]/,
+          test: /[\\/]node_modules[\\/](react|react-dom|react-router|react-router-dom|lodash|lodash-decorators|redux-saga|re-select|dva|moment|react-transition-group|react-virtualized)[\\/]/,
           priority: -10,
         },
         antdesigns: {
           name: 'antdesigns',
           chunks: 'all',
           test: /[\\/]node_modules[\\/](@ant-design|antd)[\\/]/,
-          priority: -11,
+          priority: -20,
         },
       },
     });
@@ -63,6 +62,7 @@ export default {
   alias: {
     music: resolve(__dirname, './src/services/music'),
     components: resolve(__dirname, './src/components'),
+    common: resolve(__dirname, './src/components/common'),
     utils: resolve(__dirname, './src/components/common/utils'),
     services: resolve(__dirname, './src/services'),
     assets: resolve(__dirname, './src/assets'),

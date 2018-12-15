@@ -37,6 +37,13 @@ i, em {
   font-style: normal;
 }
 
+.fixed{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color:#e5473c!important;
+}
+
 
 @font-face {
   font-family: 'iconfont';  /* project id 934314 */

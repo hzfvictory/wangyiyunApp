@@ -37,7 +37,6 @@ class index extends Component {
             </Fragment> :
             <SearchList query={result} type={type} onClick={handleTabClick} value={value}/>
           }
-          <audio autoPlay="autoPlay" src={`https://music.163.com/song/media/outer/url?id=${musicId}.mp3`}/>
         </main>
 
       </Fragment>

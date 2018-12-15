@@ -47,7 +47,7 @@ class index extends Component {
         </Link>
         <div style={{ position: 'sticky', height: '30px' }}>
           这是404页面!!!!!
-          <a href="tel:18331883557">点击拨打18331883557</a>
+          <a href="tel:18331883557">拨打:18331883557</a>
         </div>
         <br/>
         <input style={{ width: '200px', height: '50px', backgroundColor: '#E1E1CE', color: 'block', fontSize: '20px' }}

@@ -5,20 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abcd80de-3351-4b19-982b-1414d7806bc8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/formValid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/Cookies/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/Cookies/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/Cookies/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/IndexedDB/_components/IndexedDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/IndexedDB/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/IndexedDB/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/IndexedDB/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/intersectionObserver/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/intersectionObserver/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/intersectionObserver/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/reactScroll/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/reactScroll/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/reactScroll/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/reactVirtualized/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/reactVirtualized/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Practicespace/reactVirtualized/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.umirc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/document.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/document.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/document.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/document.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/baseLayout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/baseLayout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/playlist/$id$.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/playlist/$id$.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/playlist/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/playlist/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sheetlist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sheetlist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/sheetlist/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sheetlist/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/toplist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/toplist/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/toplist/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/toplist/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,31 +53,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/layouts/baseLayout/index.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/Cookies/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+            <state relative-caret-position="115">
+              <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#26#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="upload.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/upload.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/global.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="64" selection-start-line="64" selection-end-line="104" selection-end-column="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -67,50 +79,53 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Less File" />
         <option value="HTML File" />
+        <option value="Less File" />
         <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>handleTabClick</find>
-      <find>toggleTab</find>
-      <find>songNum</find>
-      <find>onClick</find>
-      <find>onItemClick</find>
-      <find>query</find>
-      <find>BaseSongList</find>
-      <find>axios.post</find>
-      <find>basturl</find>
-      <find>bastUr</find>
-      <find>bastUrl</find>
-      <find>count</find>
-      <find>&amp;:after</find>
-      <find>clearQuery</find>
-      <find>toggleShow</find>
-      <find>url</find>
-      <find>isFull</find>
-      <find>isPlay</find>
-      <find>activeId</find>
-      <find>this.audioEle.pause();</find>
-      <find>500</find>
-      <find>ease-out</find>
-      <find>pause</find>
-      <find>play</find>
-      <find>console.log</find>
-      <find>600</find>
-      <find>fixedRight</find>
-      <find>splitChunks</find>
-      <find>chainWebpack</find>
-      <find>react-placeholder</find>
+      <find>practiceSpace</find>
+      <find>帮帮大</find>
+      <find>openModal</find>
+      <find>close_modal</find>
+      <find>_android_back_push</find>
+      <find>handleBack</find>
+      <find>createIndex</find>
+      <find>this.getStoreByName();</find>
+      <find>this.getStoreByName</find>
+      <find>onsuccess</find>
+      <find>var</find>
+      <find>window.db</find>
+      <find>function</find>
+      <find>readwrite</find>
+      <find>NavBar</find>
+      <find>my-list</find>
+      <find>getStoreByName</find>
+      <find>adpopup</find>
+      <find>__close</find>
+      <find>close</find>
+      <find>formValid</find>
+      <find>clicl</find>
+      <find>loginLoading</find>
+      <find>fixed</find>
+      <find>@bg-color</find>
+      <find>require</find>
+      <find>1px</find>
+      <find>code</find>
+      <find>2px</find>
+      <find>phone</find>
     </findStrings>
     <replaceStrings>
       <replace>bastUrl</replace>
       <replace>base</replace>
       <replace>ease-in-out</replace>
       <replace>500</replace>
+      <replace>let</replace>
+      <replace>this.db</replace>
+      <replace>2px</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/components</dir>
@@ -128,57 +143,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/search/_components/SheetList.less" />
-        <option value="$PROJECT_DIR$/src/pages/search/_components/SheetList.js" />
-        <option value="$PROJECT_DIR$/src/components/Loading/index.less" />
-        <option value="$PROJECT_DIR$/src/pages/home/_components/MHeader.js" />
-        <option value="$PROJECT_DIR$/src/services/wangyi.js" />
-        <option value="$PROJECT_DIR$/src/components/common/utils.js" />
-        <option value="$PROJECT_DIR$/src/pages/count/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/_components/ColumnList.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/_components/ColumnList.less" />
-        <option value="$PROJECT_DIR$/src/pages/home/index.less" />
-        <option value="$PROJECT_DIR$/src/pages/document.ejs" />
-        <option value="$PROJECT_DIR$/src/models/count.js" />
-        <option value="$PROJECT_DIR$/src/components/Banner/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/search/_components/BaseSongList.less" />
-        <option value="$PROJECT_DIR$/src/components/SearchNav/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/search/models/search.js" />
-        <option value="$PROJECT_DIR$/src/pages/search/_components/BaseSongList.js" />
-        <option value="$PROJECT_DIR$/src/services/beautiful.js" />
-        <option value="$PROJECT_DIR$/src/services/music.js" />
-        <option value="$PROJECT_DIR$/src/pages/score/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/score/index.less" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/components/ScrollTop/index.less" />
-        <option value="$PROJECT_DIR$/src/layouts/baseLayout/baseLayout.less" />
-        <option value="$PROJECT_DIR$/src/components/ScrollTop/index.js" />
-        <option value="$PROJECT_DIR$/src/document.ejs.html" />
-        <option value="$PROJECT_DIR$/src/layouts/index.css" />
-        <option value="$PROJECT_DIR$/src/pages/home/models/home.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/index.js" />
-        <option value="$PROJECT_DIR$/src/models/global.js" />
-        <option value="$PROJECT_DIR$/src/pages/index.js" />
-        <option value="$PROJECT_DIR$/src/layouts/baseLayout/Audio.js" />
-        <option value="$PROJECT_DIR$/src/layouts/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/search/_components/SearchList.js" />
-        <option value="$PROJECT_DIR$/src/pages/search/index.js" />
-        <option value="$PROJECT_DIR$/src/components/SearchNav/index.less" />
-        <option value="$PROJECT_DIR$/src/pages/home/_components/MHeader.less" />
-        <option value="$PROJECT_DIR$/src/pages/404.js" />
-        <option value="$PROJECT_DIR$/src/document.ejs" />
-        <option value="$PROJECT_DIR$/src/services/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/playlist/index.less" />
-        <option value="$PROJECT_DIR$/src/layouts/baseLayout/index.js" />
         <option value="$PROJECT_DIR$/src/pages/toplist/index.less" />
+        <option value="$PROJECT_DIR$/src/pages/Practicespace/Practicespace.js" />
+        <option value="$PROJECT_DIR$/src/pages/Practicespace/index.less" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/_layouy.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/$id.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/_layout.js" />
         <option value="$PROJECT_DIR$/src/pages/toplist/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/sheetlist/index.less" />
-        <option value="$PROJECT_DIR$/src/pages/sheetlist/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/document.ejs" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/reactVirtualized.js" />
+        <option value="$PROJECT_DIR$/src/pages/404.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/indexedDB/models..js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/indexedDB/index.less" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/indexedDB/indexedDB.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/reactVirtualized/model.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/intersectionObserver/model.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/intersectionObserver/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/reactScroll/model.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/indexedDB/model.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/reactVirtualized/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/indexedDB/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/reactScroll/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/Cookies.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/Cookies/model.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/IndexedDB/model.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/IntersectionObserver/model.js" />
+        <option value="$PROJECT_DIR$/src/pages/score/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/AndroidBack/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/AndroidBack/_components/AndroidBack.js" />
+        <option value="$PROJECT_DIR$/src/pages/home/index.less" />
+        <option value="$PROJECT_DIR$/config/theme.js" />
+        <option value="$PROJECT_DIR$/config/index.js" />
+        <option value="$USER_HOME$/.Trash/h5_android_back/index_react.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/index.js" />
         <option value="$PROJECT_DIR$/src/pages/playlist/$id$.js" />
+        <option value="$PROJECT_DIR$/src/layouts/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/IndexedDB/_components/IndexedDB.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/IndexedDB/index.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/IndexedDB/index.less" />
+        <option value="$PROJECT_DIR$/src/pages/sheetlist/index.less" />
         <option value="$PROJECT_DIR$/.umirc.js" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/Cookies/index.less" />
+        <option value="$PROJECT_DIR$/src/assets/css/variable.less" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/IntersectionObserver/index.js" />
         <option value="$PROJECT_DIR$/src/global.css" />
+        <option value="$PROJECT_DIR$/src/pages/login/model.js" />
+        <option value="$PROJECT_DIR$/src/components/common/formValid.js" />
+        <option value="$PROJECT_DIR$/src/pages/login/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/pages/login/index.less" />
+        <option value="$PROJECT_DIR$/src/pages/practiceSpace/Cookies/index.js" />
+        <option value="$PROJECT_DIR$/upload.sh" />
       </list>
     </option>
   </component>
@@ -248,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,28 +270,11 @@
               <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="new_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="new_app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="baseLayout" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,18 +297,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/img" />
-      <recent name="$PROJECT_DIR$/src/assets/css/iconfont" />
-      <recent name="$PROJECT_DIR$/src/assets/img/home" />
-      <recent name="$PROJECT_DIR$/src/assets/home/img" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components/common" />
+      <recent name="$PROJECT_DIR$/src/pages/practiceSpace/Cookies" />
+      <recent name="$PROJECT_DIR$/src/pages/practiceSpace/reactVirtualized" />
+      <recent name="$PROJECT_DIR$/src/pages/practiceSpace/reactScroll" />
+      <recent name="$PROJECT_DIR$/src/pages/practiceSpace/intersectionObserver" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/layouts" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/assets/img" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -354,12 +351,15 @@
       <workItem from="1543806839482" duration="6567000" />
       <workItem from="1543990792922" duration="6411000" />
       <workItem from="1544077166735" duration="12540000" />
-      <workItem from="1544242486236" duration="4338000" />
+      <workItem from="1544242486236" duration="16435000" />
+      <workItem from="1544426135402" duration="58368000" />
+      <workItem from="1544751848433" duration="5389000" />
+      <workItem from="1544764898835" duration="13052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311680000" />
+    <option name="totallyTimeSpent" value="400586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,18 +374,19 @@
     <frame x="0" y="23" width="1280" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.20969023" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.20969023" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290938" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
       <window_info id="Structure" order="1" sideWeight="0.5007949" side_tool="true" weight="0.20969023" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.61685216" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32114467" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
+      <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.3290938" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -396,23 +397,24 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.20969023" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.20969023" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3290938" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Thumbnails" order="0" weight="0.3290938" />
       <window_info id="Structure" order="1" sideWeight="0.5007949" side_tool="true" weight="0.20969023" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290938" />
-      <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.61685216" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3290938" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4880763" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3290938" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -435,296 +437,89 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/search/models/search.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/reactScroll/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="33" selection-start-line="33" selection-end-line="34" />
+        <state relative-caret-position="240">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/search/_components/BaseSongList.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/Cookies.js" />
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/IntersectionObserver/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        <state relative-caret-position="405">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Banner/index.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/IndexedDB/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        <state relative-caret-position="405">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/score/index.less">
+    <entry file="file://$PROJECT_DIR$/src/pages/.umi/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state>
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/score/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="41" />
+        <state relative-caret-position="222">
+          <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/pages/search/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="75">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/playlist/index.js" />
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/AndroidBack/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/AndroidBack/_components/AndroidBack.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/umi/link.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/beautiful.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/404.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="6" selection-end-column="1" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/music.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="60" lean-forward="true" selection-start-column="60" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ScrollTop/index.less" />
-    <entry file="file://$PROJECT_DIR$/src/layouts/baseLayout/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/document.ejs.html" />
-    <entry file="file://$PROJECT_DIR$/upload.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/models/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/baseLayout/Audio.js" />
-    <entry file="file://$PROJECT_DIR$/src/pages/search/_components/SearchList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/search/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/_components/MHeader.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/_components/Menu.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavBack/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SearchNav/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/_components/MHeader.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/document.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/404.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ScrollTop/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="309" column="27" lean-forward="true" selection-start-line="309" selection-start-column="27" selection-end-line="309" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/toplist/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="62" column="41" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/toplist/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/sheetlist/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/sheetlist/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="75" column="73" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/playlist/$id$.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/playlist/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/umi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-839" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/vendors.async.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/webpack-chain/src/Config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.umirc.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="412">
+          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
             <element signature="e#259#304#0" expanded="true" />
@@ -733,27 +528,257 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/config/theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="75">
+          <caret line="5" column="30" lean-forward="true" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/baseLayout/index.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/react-loadable/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+        <state relative-caret-position="210">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.Trash/h5_android_back/index_react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="38" column="72" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="308" column="17" selection-start-line="308" selection-start-column="17" selection-end-line="308" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="8319" column="13" selection-start-line="8319" selection-start-column="13" selection-end-line="8319" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/playlist/$id$.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/toplist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/IndexedDB/_components/IndexedDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/IndexedDB/index.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/sheetlist/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/sheetlist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/Cookies/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/classnames/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#51#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/cookie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/IndexedDB/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rc-form/lib/createBaseForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6348" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rc-form/lib/createForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rc-form/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/_components/BaseSongList.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/search/index.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/variable.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/IntersectionObserver/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#30#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.umirc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="64" selection-start-line="64" selection-end-line="104" selection-end-column="1" />
+        <state relative-caret-position="282">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/formValid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/Cookies/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/practiceSpace/Cookies/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#26#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
         </state>
       </provider>
     </entry>
