@@ -9,7 +9,7 @@ import styles from './Menu.less';
 const Menu = (props) => {
   const data = [
     { tit: '私人FM', route: '' },
-    { tit: '每日推荐', route: '' },
+    { tit: '每日推荐', route: 'recommendlist' },
     { tit: '歌单', route: '/sheetlist' },
     { tit: '排行榜', route: '/toplist' },
   ];

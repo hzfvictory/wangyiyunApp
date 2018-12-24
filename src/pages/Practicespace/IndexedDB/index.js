@@ -1,18 +1,21 @@
 /**
  * title: 浏览器数据库
  */
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, createRef} from 'react';
 import { Tag, List, Button, NavBar, Icon, WhiteSpace, WingBlank } from 'antd-mobile';
 import IndexedDB from './_components/IndexedDB';
 
 import styles from './index.less';
 
-@IndexedDB
+@IndexedDB('zhenfeng','defaultDB')
 class index extends Component {
+  myDB = createRef();
+
   state = {};
 
   componentDidMount() {
-    // console.log(this,'index');
+    console.log(this,'index');
+    console.log(this.myDB.current,"createRef 获取ref");
   }
 
   createIndexedDB = () => {
@@ -90,8 +93,15 @@ class index extends Component {
           }}
           rightContent={[]}
         />
+        <div ref={props.refDB}>
+          IndexDB
+        </div>
+        <div ref={this.myDB}>
+          createRef——IndexDB
+        </div>
+
         <WhiteSpace size={'xl'}/>
-        <Button type="ghost" size="small" inline onClick={this.createIndexedDB}>建表</Button>
+        <Button type="ghost" size="small" inline  onClick={this.createIndexedDB}>建表</Button>
         <WhiteSpace size={'xl'}/>
         <Button type="ghost" size="small" inline onClick={this.handleIndexedDB}>存数据</Button>
         <WhiteSpace size={'xl'}/>
@@ -116,3 +126,5 @@ class index extends Component {
 
 
 export default index;
+
+

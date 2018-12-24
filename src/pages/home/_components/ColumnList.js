@@ -3,7 +3,7 @@ import router from 'umi/router';
 import { Link, withRouter } from 'dva/router';
 import PropTypes from 'prop-types';
 
-import { formatPlayCount } from '../../../components/common/utils';
+import { formatPlayCount } from 'utils/common';
 import Loading from '../../../components/Loading';
 import styles from './ColumnList.less';
 

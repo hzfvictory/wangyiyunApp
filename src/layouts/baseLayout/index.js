@@ -67,6 +67,32 @@ class BaseLayout extends Component {
     }
   }
 
+  componentDidMount() {
+    let audio = document.getElementById('audio');
+    audio.addEventListener('ended', this.playEndedHandler, false);
+  }
+
+  playEndedHandler = () => {
+    const { global: { currentMusic } } = this.props;
+    if (currentMusic.length > 1) {
+      let popmusic = currentMusic.shift();
+      currentMusic.push(popmusic);
+      console.log(currentMusic);
+      this.props.dispatch({
+        type: `global/save`,
+        payload: {
+          currentMusic
+        },
+      });
+      this.audioEle.play();
+    }
+  };
+
+  componentWillUnmount() {
+    let audio = document.getElementById('audio');
+    audio.removeEventListener('ended', this.playEndedHandler, false);
+  }
+
   // shouldComponentUpdate(nextProps, nextState) {
   //   const { global: { isPlay, currentMusic = {} }, location } = this.props;
   //   console.log(location.pathname);
@@ -75,7 +101,7 @@ class BaseLayout extends Component {
 
 
   render() {
-    const { global: { isPlay, currentMusic = {} }, location: { key, pathname } } = this.props;
+    const { global: { isPlay, currentMusic = [] }, location: { key, pathname } } = this.props;
     const { showMusicList } = this.state;
     const isList = Object.keys(currentMusic).length;
     const flag = pathname !== '/search';
@@ -102,11 +128,11 @@ class BaseLayout extends Component {
 
             <div className={styles.playerMin} onClick={() => this.setState({ isFull: true })}>
               <div className={styles.playerMinImg}>
-                <img src={`${currentMusic.image}?param=100y100`} alt="" width="100%" height="100%"/>
+                <img src={`${currentMusic[0].image}?param=100y100`} alt="" width="100%" height="100%"/>
               </div>
               <div className={styles.playerMinInfo}>
-                <h2>{currentMusic.name}</h2>
-                <p>{currentMusic.singer}</p>
+                <h2>{currentMusic[0].name}</h2>
+                <p>{currentMusic[0].singer}</p>
               </div>
               <div className={styles.playerMinPlay} onClick={this.play}>
                 {!isPlay && <i className="iconfont">&#xe60c;</i>}
@@ -118,8 +144,9 @@ class BaseLayout extends Component {
             </div>
           </div>
           }
-          <audio ref={x => this.audioEle = x}
-                 src={`https://music.163.com/song/media/outer/url?id=${currentMusic['id']}.mp3`}/>
+          <audio id='audio' ref={x => this.audioEle = x}
+                 preload="true"
+                 src={`https://music.163.com/song/media/outer/url?id=${!!currentMusic.length ? currentMusic[0]['id'] : ''}.mp3`}/>
 
         </footer>
 

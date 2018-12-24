@@ -1,0 +1,62 @@
+@import "../../assets/css/mixins.less";
+@import "../../assets/css/variable.less";
+
+.songWrapper {
+  text-align: left;
+  padding-left: 20px;
+  -webkit-overflow-scrolling: touch;
+  .songItem {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-top: 10px;
+    .songInfo {
+      flex: 1;
+      min-width: 0;
+      &:not(:last-child) {
+        //border-bottom: 2px solid #ddd;
+      }
+      h2 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 32px;
+        margin-bottom: 10px;
+        .noWrap;
+      }
+      p {
+        line-height: 30px;
+        font-size: 26px;
+        color: #777;
+        padding: 10px 0;
+        .noWrap;
+        i {
+          display: inline-block;
+          width: 24px;
+          height: 16px;
+          background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+          background-size: 166px*2 97px*2;
+          margin-right: 8px;
+        }
+        em{
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .am-button-warning {
+    background-color: @bg-color;
+  }
+  .am-list-body {
+    border-bottom-width: 2px;
+  }
+  a:hover {
+    color: #fff;
+  }
+  .pr100{
+    padding-right: 100px;
+  }
+}

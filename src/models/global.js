@@ -5,7 +5,8 @@ export default {
   namespace: 'global',
   state: {
     currentMusic:{},
-    isPlay:false
+    isPlay:false,
+    recommend:[]
     },
   reducers: {
     save(state, { payload }) {

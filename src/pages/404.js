@@ -4,7 +4,7 @@ import { Link, routerRedux } from 'dva/router';
 import { NavBar, Toast, Steps } from 'antd-mobile';
 import classnames from 'classnames';
 import styles from './404.less';
-import { throttle, debounce } from 'utils';
+import { throttle, debounce } from 'utils/common';
 
 
 const Step = Steps.Step;

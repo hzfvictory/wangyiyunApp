@@ -3,7 +3,7 @@ import BaseLayout from './baseLayout';
 import pathToRegexp from 'path-to-regexp';
 import './index.css';
 
-const URL_NO_LAYOUT = ['/login', '/score', '/practiceSpace/:foo?'];
+const URL_NO_LAYOUT = ['/score', '/practiceSpace/:fo?/:foo?'];
 
 
 class Index extends Component {

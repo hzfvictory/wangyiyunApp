@@ -10,7 +10,7 @@ const MHeader = props => {
 
   const showHeader = /music|home|video/.test(props.location.pathname);
   const open = function mmHeaderOpenDrawer() {
-    props.onOpen(true);
+    props.onOpen();
   };
   const openSearch = function mmHeaderOpenDrawer() {
     router.push('/search');

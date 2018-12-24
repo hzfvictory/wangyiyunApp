@@ -5,13 +5,14 @@
   background: #DEF1E5;
   overflow: hidden;
 }
-.bannerBox{
+
+.bannerBox {
   position: relative;
   padding: 0 20px;
   box-sizing: border-box;
   width: 100vw;
   height: 43.8vw;
-  &:before{
+  &:before {
     position: absolute;
     content: '';
     top: 0;
@@ -22,17 +23,41 @@
   }
 }
 
-
 .songSheet {
   display: flex;
   justify-content: start;
   padding: 20px 20px;
   align-items: center;
-  h3{
+  h3 {
     margin: 0;
   }
-  a{
+  a {
     line-height: 1;
     color: rgba(0, 0, 0, 0.85);;
+  }
+}
+
+:global {
+  .am-drawer-content{
+    overflow: hidden;
+  }
+  main{
+    padding-bottom: 110px;
+  }
+  .my-drawer {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    //-webkit-overflow-scrolling: touch;
+
+  }
+  .am-drawer-draghandle{
+    width: 0!important;
+  }
+  .am-drawer-sidebar{
+    width: 70%;
+    background-color: white;
   }
 }

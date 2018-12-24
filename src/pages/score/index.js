@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import { Icon } from 'antd';
 import styles from './index.less';
 
+import img from '../../assets/img/score.jpg';
+
 const mapStateToProps = (score) => (score);
 
 @connect(mapStateToProps)
@@ -18,12 +20,49 @@ class index extends Component {
   static propTypes = {};
 
 
+  baseIng = (src) => {
+    const getBase64Image = (img) => {
+      let canvas = document.createElement('canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      let ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, img.width, img.height);
+      let ext = img.src.substring(img.src.lastIndexOf('.') + 1).toLowerCase();
+
+
+      let dataURL = canvas.toDataURL('image/' + ext);
+      let cancelImg = dataURL.substr(dataURL.indexOf(',') + 1);
+
+      console.log(cancelImg.length);
+      let AllowImgFileSize = 2100000;    //上传图片最大值(单位字节)（ 2 M = 2097152 B ）
+      if (AllowImgFileSize != 0 && AllowImgFileSize < cancelImg.length) {
+        alert('上传失败，请上传不大于2M的图片！');
+        return;
+      }
+
+
+      return dataURL;
+    };
+
+
+    let image = new Image();
+    image.src = img;
+    image.onload = function() {
+      console.log(image);
+      let base64 = getBase64Image(image);
+      console.log(base64);
+    };
+  };
+
+
   render() {
     const { props: { score: { result } }, state: { files } } = this;
     const { face_list = [], face_num = 1 } = result;
     console.log(face_list, face_num);
     return (
-      <div className={styles.scoreBg}>
+      // className={styles.scoreBg}
+      <div>
+        <button onClick={this.baseIng.bind(this, img)}>转base64</button>
         {/*<SegmentedControl*/}
         {/*values={['切换到单选', '切换到多选']}*/}
         {/*selectedIndex={this.state.multiple ? 1 : 0}*/}

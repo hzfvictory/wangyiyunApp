@@ -53,7 +53,7 @@ export default {
         antdesigns: {
           name: 'antdesigns',
           chunks: 'all',
-          test: /[\\/]node_modules[\\/](@ant-design|antd)[\\/]/,
+          test: /[\\/]node_modules[\\/](@ant-design|antd|antd-mobile)[\\/]/,
           priority: -20,
         },
       },
@@ -62,8 +62,7 @@ export default {
   alias: {
     music: resolve(__dirname, './src/services/music'),
     components: resolve(__dirname, './src/components'),
-    common: resolve(__dirname, './src/components/common'),
-    utils: resolve(__dirname, './src/components/common/utils'),
+    utils: resolve(__dirname, './src/utils'),
     services: resolve(__dirname, './src/services'),
     assets: resolve(__dirname, './src/assets'),
     src: resolve(__dirname, './src'),

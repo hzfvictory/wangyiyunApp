@@ -3,7 +3,7 @@
  */
 import React, { Component, Fragment } from 'react';
 import { NavBar, Icon, Modal, List, InputItem, WhiteSpace, WingBlank } from 'antd-mobile';
-import { setCookie, getCookie, removeCookie, generateExpires } from 'common/cookie';
+import { setCookie, getCookie, removeCookie, generateExpires } from 'utils/cookie';
 import classnames from 'classnames';
 import { createForm } from 'rc-form';
 

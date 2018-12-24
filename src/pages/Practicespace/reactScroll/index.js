@@ -2,25 +2,33 @@
  * title: 移动端滚动
  */
 import React, { Component, Fragment } from 'react';
-import { connect } from 'react-redux';
-import { WingBlank } from 'antd-mobile';
-import classnames from 'classnames';
-import { Link } from 'dva/router';
-import router from 'umi/router';
+import ReactScroll from './_components/index';
 
 
-const mapStateToProps = (state) => (state);
+import styles from './index.less';
 
-@connect(mapStateToProps)
+const mockAry = [...new Array(100).keys()];
 
 class index extends Component {
   state = {};
 
+  componentDidMount() {
+    // let scroll_wapper = document.getElementById('content');
+    // new BScroll(scroll_wapper);
+  }
+
   render() {
-    const { props, state } = this;
     return (
       <Fragment>
-        IndexDB
+        <ReactScroll>
+          <div id='content' className={styles['content']}>
+
+            {mockAry.map((item, index) => {
+              return <div key={index}>{item}</div>;
+            })
+            }
+          </div>
+        </ReactScroll>
       </Fragment>
     );
   }

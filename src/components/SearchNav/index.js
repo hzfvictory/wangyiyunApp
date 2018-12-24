@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ronter from 'umi/router';
 import withRouter from 'umi/withRouter';
-import { debounce } from 'utils';
+import { debounce } from 'utils/common';
 
 import { Icon } from 'antd-mobile';
 import styles from './index.less';

@@ -4,7 +4,7 @@ import ronter from 'umi/router';
 import withRouter from 'umi/withRouter';
 import Loading from '../../../components/Loading';
 
-import { formatPlayCount } from 'utils';
+import { formatPlayCount } from '../../../utils/common';
 import styles from './SheetList.less';
 
 

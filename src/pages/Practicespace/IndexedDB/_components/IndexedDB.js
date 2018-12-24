@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-export default (Target, storeDB = 'zhenfeng', nameDB = 'defaultDB') => {
-  return class IndexedDB extends Component {
+export default (storeDB , nameDB )=>(Target) => {
+
+  class IndexedDB extends Component {
     constructor(props) {
       super(props);
       this.state = {};
@@ -11,6 +12,7 @@ export default (Target, storeDB = 'zhenfeng', nameDB = 'defaultDB') => {
 
     componentDidMount() {
       this.createIndexedDB();
+      console.log(this.indexdb,2345678);
     }
 
     //TODO:创建DB
@@ -171,9 +173,9 @@ export default (Target, storeDB = 'zhenfeng', nameDB = 'defaultDB') => {
       let request = store.get(key);
       request.onsuccess = (e) => {
         let student = e.target.result;
-        if( student.age === age){
+        if (student.age === age) {
           console.log('没发生改变');
-        }else{
+        } else {
           student.age = age;
           store.put(student);
           console.log('修改成功');
@@ -186,11 +188,12 @@ export default (Target, storeDB = 'zhenfeng', nameDB = 'defaultDB') => {
       this.db.close();
       console.log(this.db.name + ' database is already closed!');
     };
+
     render() {
       const { props, state } = this;
 
       return (
-        <Target {...this.props}
+        <Target {...props}
                 IndexedDB={{
                   addIndexedDB: this.addIndexedDB,
                   createIndexedDB: this.createIndexedDB,
@@ -202,6 +205,7 @@ export default (Target, storeDB = 'zhenfeng', nameDB = 'defaultDB') => {
                   closeDB: this.closeDB,
                   updateDataByKey: this.updateDataByKey,
                 }}
+                refDB={x=>this.indexdb=x}
         />
       );
     }
@@ -213,5 +217,6 @@ export default (Target, storeDB = 'zhenfeng', nameDB = 'defaultDB') => {
     };
 
   };
+   return IndexedDB
 };
 

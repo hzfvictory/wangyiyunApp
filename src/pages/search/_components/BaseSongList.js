@@ -16,6 +16,7 @@ const PlaceHolder = (props) => {
 };
 const BaseSongList = (props) => {
   const { list, songCount, onItemClick, activeId, value } = props;
+  console.log(activeId);
   const hghLight = (name) => {
       let reg = new RegExp(value, 'ig');
       name = name.replace(reg, `<span class="highlight">${value}</span>`); //进行替换，并定义高亮的样式

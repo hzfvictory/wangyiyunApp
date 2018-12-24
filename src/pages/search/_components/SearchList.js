@@ -34,7 +34,8 @@ class SearchList extends Component {
   };
 
   componentWillReceiveProps(nextprops){
-    const {  global: { isPlay ,currentMusic:{id} } } = nextprops;
+    const {  global: { isPlay ,currentMusic } } = nextprops;
+    const id=!!currentMusic.length && currentMusic[0]['id'];
     if(isPlay&&id){
       this.setState({
         activeId: id,
@@ -48,7 +49,6 @@ class SearchList extends Component {
 
   render() {
     const { props: { query, type, value }, state: { tabData, activeId } } = this;
-
     return (
       <div className={styles.searchList}>
         <header className={styles.clearFlort}>
@@ -116,10 +116,12 @@ class SearchList extends Component {
     dispatch({
       type: `global/save`,
       payload: {
-        currentMusic: obj,
+        currentMusic: [obj],
         isPlay: !isPlay,
       },
     });
+    let audio = document.getElementById('audio');
+    audio.loop = true;//循环播放
   };
   //跳转到歌单
   openPlayList = () => {

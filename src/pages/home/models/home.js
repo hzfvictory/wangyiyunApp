@@ -1,5 +1,6 @@
 import { routerRedux } from 'dva/router';
-import { getBanner, getTopListDetail, personalized } from '../../../services/music.js';
+import { getBanner, getTopListDetail, personalized, userDetail, logout } from '../../../services/music.js';
+import { getToken, setToken } from '../../../utils/token';
 
 export default {
   namespace: 'home',
@@ -7,27 +8,42 @@ export default {
     count: 0,
     banner: [],
     result: [],
+    profile: {},
   },
   reducers: {
-    save(state, { payload: { banner, result } }) {
+    save(state, { payload }) {
       return {
         ...state,
-        banner,
-        result,
+        ...payload,
       };
     },
   },
   effects: {
-    * add({ payload }, { call, put }) {
-      const { banners } = yield call(getBanner);
-      const { result, code } = yield call(personalized);
-
+    * add({ payload }, { call, put ,all }) {
+     let   data_home=  yield all([
+       call(getBanner),
+       call(personalized)
+     ]);
+     const {0:{banners},1:{result,code}} = data_home;
+      const isToken = getToken();
       if (parseInt(code, 10) === 200) {
         yield put({
           type: 'save',
           payload: { banner: banners, result },
         });
       }
+      //用户信息
+      if (isToken) {
+        const data = yield call(userDetail, { 'uid': isToken });
+        const { profile } = data;
+        yield put({
+          type: 'save',
+          payload: { profile: profile },
+        });
+      }
+    },
+    * logout({ payload }, { call, put }) {
+      yield call(logout);
     },
   },
   subscriptions: {

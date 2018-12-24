@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import { Link } from 'dva/router';
 import router from 'umi/router';
 import ScrollTop from '../../components/ScrollTop';
-import { throttle } from '../../components/common/utils';
+import { throttle } from '../../utils/common';
 
 import { AutoSizer } from 'react-virtualized/dist/commonjs/AutoSizer';
 import { List as VList } from 'react-virtualized/dist/commonjs/List';

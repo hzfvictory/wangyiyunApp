@@ -43,3 +43,39 @@ export function getTopListDetail() {
   const url = `${base}/toplist/detail`;
   return axios.get(url);
 }
+
+//手机号登录
+export function signInMusic(user) {
+  const url = `${base}/login/cellphone`;
+  return axios.get(url, {
+    params: user,
+  });
+}
+
+
+//登录状态 （不能用）
+export function loginStatus(user) {
+  const url = `${base}/login/status`;
+  return axios.get(url);
+}
+
+//获取用户详情
+export function userDetail(id) {
+  const url = `${base}/user/detail`;
+  return axios.get(url, {
+      params: id,
+    },
+  );
+}
+
+//退出登录 （不能用）
+export function logout(id) {
+  const url = `${base}/logout`;
+  return axios.get(url);
+}
+
+//每日推荐
+export function recommendList() {
+  const url = `${base}/recommend/songs`;
+  return axios.get(url);
+}

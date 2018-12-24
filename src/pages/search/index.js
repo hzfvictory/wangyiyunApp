@@ -32,7 +32,7 @@ class index extends Component {
         <main>
           {value.length <= 0 ?
             <Fragment>
-              <HotList hots={[{ first: '薛之谦' }, { first: '大' }]} tit={'历史记录'} onClickInput={onEnterSearch}/>
+              <HotList hots={[{ first: '薛之谦' }, { first: '贝贝' }]} tit={'历史记录'} onClickInput={onEnterSearch}/>
               <HotList hots={hots} onClickInput={onEnterSearch}/>
             </Fragment> :
             <SearchList query={result} type={type} onClick={handleTabClick} value={value}/>

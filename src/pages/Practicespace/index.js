@@ -25,6 +25,22 @@ const index = () => {
       <Link to='/practiceSpace/Cookies'>
         Go to /practiceSpace/Cookies
       </Link>
+      <WhiteSpace/>
+      <Link to='/practiceSpace/CustomEvent'>
+        Go to /practiceSpace/CustomEvent
+      </Link>
+      <WhiteSpace/>
+      <Link to='/practiceSpace/DeviceOrientation'>
+        Go to /practiceSpace/DeviceOrientation
+      </Link>
+      <WhiteSpace/>
+      <Link to='/practiceSpace/reactScroll/zscroller'>
+        Go to /practiceSpace/reactScroll/zscroller
+      </Link>
+      <WhiteSpace/>
+      <Link to='/practiceSpace/Vibrate'>
+        Go to /practiceSpace/Vibrate
+      </Link>
     </>
 
   );
