@@ -7,7 +7,7 @@ import router from 'umi/router';
 
 //滚动插件
 import ZScroller from 'zscroller';
-import 'zscroller/assets/index.css';
+// import 'zscroller/assets/index.css';
 
 
 //组件
@@ -39,15 +39,9 @@ class index extends Component {
 
   componentDidMount() {
     this.zscroller = new ZScroller(this.main, {
-      scrollbars: true,
-      zooming: false,//缩放
-      animationDuration:5000,
+      animationDuration:150,
       animating: true,
       bouncing:false,
-      scrollingX: false,
-      snapping: true,
-      locking: true,
-      scrollingY: true,
       onScroll :this.handelScroll,
     }).scroller;
     // this.zscroller.scrollTo(0,0,false)

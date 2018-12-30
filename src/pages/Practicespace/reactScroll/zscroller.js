@@ -1,5 +1,7 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import ZScroller from 'zscroller';
 import './index.less'
 let zscroller;
@@ -61,7 +63,6 @@ class zscroll extends React.Component {
           >
             <div id="roots" style={{ height: 2000, width: 1200, border: '1px solid red' }}>
               <div id='content'>
-
                 {mockAry.map((item, index) => {
                   return <div key={index}>{item}</div>;
                 })
