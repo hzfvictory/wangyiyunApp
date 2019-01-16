@@ -4,6 +4,8 @@ import { WingBlank, Carousel, Drawer, List, NavBar, Icon, WhiteSpace, Toast } fr
 import classnames from 'classnames';
 import { Link } from 'dva/router';
 import router from 'umi/router';
+import immutable from "seamless-immutable"
+
 
 //滚动插件
 import ZScroller from 'zscroller';
@@ -53,6 +55,11 @@ class index extends Component {
 
   render() {
     const { props: { home: { banner, result, profile }, location } } = this;
+
+    // banner.map((item)=>{
+    //   return item.victory='victory'
+    // });
+
     return (
       <Fragment>
         <MHeader onOpen={this.openDrawer}/>
@@ -67,8 +74,8 @@ class index extends Component {
           <main ref={x=>this.main=x}>
             <div className={classnames({ [styles.bannerBox]: banner.length })}>
               <NameContext.Provider value={banner}>
+                <Banner banner={banner} imgHeight={176}/>
               </NameContext.Provider>
-              <Banner banner={banner} imgHeight={176}/>
             </div>
             {/*展示栏*/}
             <Menu/>

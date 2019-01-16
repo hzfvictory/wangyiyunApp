@@ -2,7 +2,7 @@ import axios from './index';
 
 let base = '';
 if (process.env.NODE_ENV === 'development') {
-  base = 'music';
+  base = '/music';
 }
 
 //获取轮播

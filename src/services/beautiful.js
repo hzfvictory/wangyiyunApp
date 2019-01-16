@@ -3,7 +3,7 @@ import qs from 'querystring';
 
 let base='';
 if(process.env.NODE_ENV==='development'){
-   base = 'beautiful';
+   base = '/beautiful';
 }
 
 export function getImageDetail(data) {

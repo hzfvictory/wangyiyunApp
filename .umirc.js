@@ -71,12 +71,12 @@ export default {
     '/api/music': {
       'target': 'http://120.79.229.197:8000',
       'changeOrigin': true,
-      'pathRewrite': { '/api/music': '/' },
+      'pathRewrite': { '/api/music': '' },
     },
     '/api/beautiful': {
       'target': 'http://47.93.15.83/thinkphp5/public/index/index/faceapi',
       'changeOrigin': true,
-      'pathRewrite': { '^/api/beautiful': '/' },
+      'pathRewrite': { '/api/beautiful': '' },
     },
   },
   // publicPath: `/${version}/`,

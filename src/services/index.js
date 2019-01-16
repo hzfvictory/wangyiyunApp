@@ -6,7 +6,7 @@ import {Toast} from "antd-mobile"
 const URL_NO_MUSIC = ['/score'];
 
 const baseURIMap = {
-  'development': 'http://localhost:8000/api',
+  'development': window.location.origin +'/api',
   'product': 'http://www.jing999.cn:8000',
 
   'score': 'http://47.93.15.83/thinkphp5/public/index/index/faceapi',
@@ -17,7 +17,9 @@ const score = URL_NO_MUSIC.includes(window.location.pathname);
 
 
 
-axios.defaults.baseURL = baseURIMap[process.env.NODE_ENV] || (score ? baseURIMap['score'] : baseURIMap['product']);
+axios.defaults.baseURL = baseURIMap[process.env.NODE_ENV] || baseURIMap[score && 'score'] || baseURIMap['product'];
+
+
 axios.defaults.timeout = 5000;
 axios.defaults.withCredentials = true;
 
