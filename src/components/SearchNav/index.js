@@ -21,7 +21,7 @@ class index extends Component {
     const { props: { value } } = this;
     return (
       <header className={styles.clearFlort}>
-        <nav className={styles.nav}>
+        <nav className={styles.nav}  id={'nav'}>
           <div className={styles.navLeft} onClick={ronter.goBack}/>
           <div className={styles.searchHead}>
             <input

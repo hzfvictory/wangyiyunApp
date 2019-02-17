@@ -18,7 +18,7 @@ const MHeader = props => {
   return (
     showHeader && (
       <header className={styles.head}>
-        <div className={styles.header}>
+        <div className={styles.header} id='header'>
           <div className={styles.headerLeft} onClick={open}/>
           <div className={styles.headerTitle}>
             <NavLink className={styles.headerItem} to="/home"/>

@@ -52,7 +52,7 @@ class SearchList extends Component {
     return (
       <div className={styles.searchList}>
         <header className={styles.clearFlort}>
-          <ul className={styles.searchTab}>
+          <ul className={styles.searchTab} id='searchTab'>
             {
               tabData.map(item => (
                 <li className={classnames([styles.searchTabItem], { [styles.active]: type === item.type })}

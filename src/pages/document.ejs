@@ -28,6 +28,19 @@
   <!-- windows phone 点击无高光 -->
   <meta name="msapplication-tap-highlight" content="no">
   <title><%= context.title %></title>
+
+
+  <link rel="stylesheet/less" type="text/css" href="/variable.less" />
+  <script>
+    window.less = {
+      async: false,
+      env: 'production'
+    };
+  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.js"></script>
+
+
 </head>
 <body>
 <div id="root"></div>
@@ -44,3 +57,6 @@
 
 </body>
 </html>
+
+
+

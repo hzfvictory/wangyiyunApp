@@ -72,7 +72,7 @@ class index extends Component {
           onOpenChange={this.onOpenChange}
         >
           <main ref={x=>this.main=x}>
-            <div className={classnames({ [styles.bannerBox]: banner.length })}>
+            <div className={classnames({ [styles.bannerBox]: banner.length })} id='bannerBox'>
               <NameContext.Provider value={banner}>
                 <Banner banner={banner} imgHeight={176}/>
               </NameContext.Provider>

@@ -1,5 +1,5 @@
 import { routerRedux } from 'dva/router';
-import { loginStatus } from '../services/music.js';
+import  loginStatus  from '../services/music.js';
 
 export default {
   namespace: 'common',

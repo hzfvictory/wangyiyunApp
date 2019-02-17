@@ -30,6 +30,7 @@ yarn build  //项目打包
 - [Better-Scroll](https://ustbhuangyi.github.io/better-scroll/#/zh)（一款重点解决移动端各种滚动场景需求的插件）
 - zscroller（移动端各种滚动场景需求的插件）
 - seamless-immutable 基于immutable优化React （https://github.com/rtfeldman/seamless-immutable）
+- less-vars-to-js 将less转成js对象
 ## 项目布局
 
 ```

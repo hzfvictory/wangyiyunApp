@@ -1,6 +1,11 @@
 import { resolve } from 'path';
 
+// const fs = require('fs');
+// const lessToJs = require('less-vars-to-js');
+// const color = lessToJs(fs.readFileSync('./public/variable.less', 'utf8'));
+
 const { version } = require('./package');
+
 export default {
   plugins: [
     ['umi-plugin-react', {
@@ -33,6 +38,9 @@ export default {
       fastClick: true,
     }],
   ],
+  define: {
+    // BGCOLOR:color['@bg-color'], // 应用类型
+  },
   chainWebpack(config, { webpack }) {
     config.optimization.splitChunks({
       chunks: 'async',
