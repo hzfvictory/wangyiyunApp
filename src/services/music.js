@@ -79,3 +79,19 @@ export function recommendList() {
   const url = `${base}/recommend/songs`;
   return axios.get(url);
 }
+
+
+
+
+
+export function login(data) {
+  const url = `https://xueyuan.jianmoapp.com/_api/xpmsns/user/user/login`;
+  return axios.post(url, {
+    ...data,
+  });
+}
+
+export function loginIcon() {
+  const url = `https://xueyuan.jianmoapp.com/_api/xpmsns/user/user/vcode`;
+  return axios.get(url);
+}
