@@ -86,7 +86,14 @@ export default {
       'changeOrigin': true,
       'pathRewrite': { '/api/beautiful': '' },
     },
+    '/api/manage': {
+      'target': 'https://elm.cangdu.org',
+      'changeOrigin': true,
+      'pathRewrite': { '/api/manage': '' },
+    },
   },
+  //【链接】{"address":"上海市黄浦区人民大道
+  // v2/pois/31.22967,121.4762
   // publicPath: `/${version}/`,
   // outputPath: `./dist/${version}`,
   // theme: { "@primary-color": "#e5473c",}
